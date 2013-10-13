@@ -18,10 +18,17 @@ Current UI
 To be implemented
 -------------
 UI for Duplicate Items
+
 Make Custom Searchbox with Autocomplete
+
 Add Images and Independed operations for Images
 
+Printing(Make it Visually Impressive)
+
+
 Hitters:
+
+
 Advanced Stats
 Batted Ball
 More Batted Ball
@@ -37,6 +44,8 @@ Value
 Contracts
 
 Pitchers:
+
+
 Standard
 Advanced Stats
 Batted Ball 
