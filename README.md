@@ -22,7 +22,6 @@ Make Custom Searchbox with Autocomplete
 Add Images and Independed operations for Images
 
 Hitters:
-
 Advanced Stats
 Batted Ball
 More Batted Ball
