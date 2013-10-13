@@ -1,6 +1,7 @@
 Baseball Parser Version 2 (Fangraphs Parser)
 -------------------------------------------
-This parser exclusivly parses fangraphs.com but it will parse it in more depth. 
+This parser exclusivly parses fangraphs.com using the libxml parser to crawl and sort data from fangraphs.com
+It is a Mac OS X application written in Cocoa and Objective-C
 
 Improvements Over Version 1
 ------------
