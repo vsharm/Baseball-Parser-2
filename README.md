@@ -1,22 +1,27 @@
 Baseball Parser Version 2 (Fangraphs Parser)
-
+-------------------------------------------
 This parser exclusivly parses fangraphs.com but it will parse it in more depth. 
 
+Improvements Over Version 1
+------------
 The way it parses is it downloads the player data then sends the Webpage to seperate modules which run on different threads to parse and format the data.
 After the data is parsed new formatted data is sent to the AppController which handles the gui.
 
 Fangraphs Parser is written with modularization and object oriented design in mind. 
 The code is far cleaner and better commented than version 1.
 
+Current UI
+--------------
 ![alt tag](http://cl.ly/Rv3R/Screen%20Shot%202013-10-13%20at%204.16.29%20PM.png)
 
-To be implemented:
+To be implemented
+-------------
 UI for Duplicate Items
 Make Custom Searchbox with Autocomplete
 Add Images and Independed operations for Images
 
-Hitters
--------
+Hitters:
+
 Advanced Stats
 Batted Ball
 More Batted Ball
@@ -31,8 +36,7 @@ Fans Scouting Report
 Value
 Contracts
 
-Pitchers
---------
+Pitchers:
 Standard
 Advanced Stats
 Batted Ball 
