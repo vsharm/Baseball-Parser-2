@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Fangraphs Parser' target in the 'Fangraphs Parser' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif

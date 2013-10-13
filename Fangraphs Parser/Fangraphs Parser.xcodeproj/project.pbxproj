@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0653C41769381F00B7F1E9 /* DuplicateType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0653C31769381F00B7F1E9 /* DuplicateType.m */; };
+		8B0653C51769381F00B7F1E9 /* DuplicateType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0653C31769381F00B7F1E9 /* DuplicateType.m */; };
+		8B3C0038176C62DA005FABD4 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C0037176C62DA005FABD4 /* AppController.m */; };
+		8B3C0039176C62DA005FABD4 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C0037176C62DA005FABD4 /* AppController.m */; };
+		8B3C0045176C6686005FABD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C0044176C6686005FABD4 /* MainMenu.xib */; };
+		8B3C0046176C6686005FABD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C0044176C6686005FABD4 /* MainMenu.xib */; };
+		8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
+		8B8A881717A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
+		8B9B750B177AD18A002335FB /* DataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B750A177AD18A002335FB /* DataViewCell.m */; };
+		8B9B750C177AD18A002335FB /* DataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B750A177AD18A002335FB /* DataViewCell.m */; };
+		8B9CCE3E1760684E0070C12C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CCE3D1760684E0070C12C /* Player.m */; };
+		8B9D99B017E8237000B4D0C2 /* ParseAdvancedHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */; };
+		8B9EA986178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */; };
+		8B9EA987178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */; };
+		8BBAF20117569F100059A638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF20017569F100059A638 /* Cocoa.framework */; };
+		8BBAF20B17569F100059A638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBAF20917569F100059A638 /* InfoPlist.strings */; };
+		8BBAF20D17569F100059A638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF20C17569F100059A638 /* main.m */; };
+		8BBAF21117569F100059A638 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8BBAF20F17569F100059A638 /* Credits.rtf */; };
+		8BBAF21417569F100059A638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF21317569F100059A638 /* AppDelegate.m */; };
+		8BBAF21F17569F100059A638 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF21E17569F100059A638 /* SenTestingKit.framework */; };
+		8BBAF22017569F100059A638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF20017569F100059A638 /* Cocoa.framework */; };
+		8BBAF22817569F100059A638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBAF22617569F100059A638 /* InfoPlist.strings */; };
+		8BBAF22B17569F100059A638 /* Fangraphs_ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF22A17569F100059A638 /* Fangraphs_ParserTests.m */; };
+		8BBAF2431756A0D80059A638 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23A1756A0D80059A638 /* TFHpple.m */; };
+		8BBAF2441756A0D80059A638 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23A1756A0D80059A638 /* TFHpple.m */; };
+		8BBAF2451756A0D80059A638 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23C1756A0D80059A638 /* TFHppleElement.m */; };
+		8BBAF2461756A0D80059A638 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23C1756A0D80059A638 /* TFHppleElement.m */; };
+		8BBAF2471756A0D80059A638 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23E1756A0D80059A638 /* XPathQuery.m */; };
+		8BBAF2481756A0D80059A638 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF23E1756A0D80059A638 /* XPathQuery.m */; };
+		8BBAF24A1756A26F0059A638 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF2491756A26F0059A638 /* libxml2.dylib */; };
+		8BBAF24D1756A3C90059A638 /* MasterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF24C1756A3C90059A638 /* MasterParser.m */; };
+		8BBAF24E1756A3C90059A638 /* MasterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF24C1756A3C90059A638 /* MasterParser.m */; };
+		8BBAF2551756A9460059A638 /* LoadPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF2541756A9460059A638 /* LoadPage.m */; };
+		8BBAF2561756A9460059A638 /* LoadPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF2541756A9460059A638 /* LoadPage.m */; };
+		8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC981766C5AD00F769E6 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8BC4EC9C1766C5AD00F769E6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC981766C5AD00F769E6 /* HTMLNode.m */; };
+		8BC4EC9D1766C5AD00F769E6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8BC4EC9E1766C5AD00F769E6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BBAF22117569F100059A638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBAF1F517569F100059A638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BBAF1FC17569F100059A638;
+			remoteInfo = "Fangraphs Parser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B0653C21769381F00B7F1E9 /* DuplicateType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuplicateType.h; sourceTree = "<group>"; };
+		8B0653C31769381F00B7F1E9 /* DuplicateType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuplicateType.m; sourceTree = "<group>"; };
+		8B3C0036176C62DA005FABD4 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "Fangraphs Parser/AppController.h"; sourceTree = "<group>"; };
+		8B3C0037176C62DA005FABD4 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Fangraphs Parser/AppController.m"; sourceTree = "<group>"; };
+		8B3C0044176C6686005FABD4 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInfoAndPosition.h; sourceTree = "<group>"; };
+		8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerInfoAndPosition.m; sourceTree = "<group>"; };
+		8B9B7509177AD18A002335FB /* DataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewCell.h; sourceTree = "<group>"; };
+		8B9B750A177AD18A002335FB /* DataViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewCell.m; sourceTree = "<group>"; };
+		8B9CCE3C1760684E0070C12C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8B9CCE3D1760684E0070C12C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		8B9D99AE17E8237000B4D0C2 /* ParseAdvancedHitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseAdvancedHitting.h; sourceTree = "<group>"; };
+		8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseAdvancedHitting.m; sourceTree = "<group>"; };
+		8B9EA984178A5B8200FF7EF9 /* ParseStandardHitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseStandardHitting.h; sourceTree = "<group>"; };
+		8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseStandardHitting.m; sourceTree = "<group>"; };
+		8BBAF1FD17569F100059A638 /* Fangraphs Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fangraphs Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBAF20017569F100059A638 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8BBAF20317569F100059A638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8BBAF20417569F100059A638 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8BBAF20517569F100059A638 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BBAF20817569F100059A638 /* Fangraphs Parser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fangraphs Parser-Info.plist"; sourceTree = "<group>"; };
+		8BBAF20A17569F100059A638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BBAF20C17569F100059A638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BBAF20E17569F100059A638 /* Fangraphs Parser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fangraphs Parser-Prefix.pch"; sourceTree = "<group>"; };
+		8BBAF21017569F100059A638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8BBAF21217569F100059A638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BBAF21317569F100059A638 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BBAF21D17569F100059A638 /* Fangraphs ParserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fangraphs ParserTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBAF21E17569F100059A638 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8BBAF22517569F100059A638 /* Fangraphs ParserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fangraphs ParserTests-Info.plist"; sourceTree = "<group>"; };
+		8BBAF22717569F100059A638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BBAF22917569F100059A638 /* Fangraphs_ParserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fangraphs_ParserTests.h; sourceTree = "<group>"; };
+		8BBAF22A17569F100059A638 /* Fangraphs_ParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fangraphs_ParserTests.m; sourceTree = "<group>"; };
+		8BBAF2391756A0D80059A638 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		8BBAF23A1756A0D80059A638 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		8BBAF23B1756A0D80059A638 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		8BBAF23C1756A0D80059A638 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		8BBAF23D1756A0D80059A638 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		8BBAF23E1756A0D80059A638 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		8BBAF2491756A26F0059A638 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		8BBAF24B1756A3C90059A638 /* MasterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterParser.h; sourceTree = "<group>"; };
+		8BBAF24C1756A3C90059A638 /* MasterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterParser.m; sourceTree = "<group>"; };
+		8BBAF2531756A9460059A638 /* LoadPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadPage.h; sourceTree = "<group>"; };
+		8BBAF2541756A9460059A638 /* LoadPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadPage.m; sourceTree = "<group>"; };
+		8BC4EC971766C5AC00F769E6 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = ../HTMLNode.h; sourceTree = "<group>"; };
+		8BC4EC981766C5AD00F769E6 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = ../HTMLNode.m; sourceTree = "<group>"; };
+		8BC4EC991766C5AD00F769E6 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = ../HTMLParser.h; sourceTree = "<group>"; };
+		8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = ../HTMLParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BBAF1FA17569F100059A638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF24A1756A26F0059A638 /* libxml2.dylib in Frameworks */,
+				8BBAF20117569F100059A638 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBAF21917569F100059A638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF21F17569F100059A638 /* SenTestingKit.framework in Frameworks */,
+				8BBAF22017569F100059A638 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0653C01769170800B7F1E9 /* OBJ-C HTML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				8BC4EC971766C5AC00F769E6 /* HTMLNode.h */,
+				8BC4EC981766C5AD00F769E6 /* HTMLNode.m */,
+				8BC4EC991766C5AD00F769E6 /* HTMLParser.h */,
+				8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */,
+			);
+			name = "OBJ-C HTML Parser";
+			path = "Fangraphs Parser";
+			sourceTree = "<group>";
+		};
+		8B0653C117692E8E00B7F1E9 /* Data Type Objects */ = {
+			isa = PBXGroup;
+			children = (
+				8B9CCE3C1760684E0070C12C /* Player.h */,
+				8B9CCE3D1760684E0070C12C /* Player.m */,
+				8B0653C21769381F00B7F1E9 /* DuplicateType.h */,
+				8B0653C31769381F00B7F1E9 /* DuplicateType.m */,
+			);
+			name = "Data Type Objects";
+			path = "Fangraphs Parser";
+			sourceTree = "<group>";
+		};
+		8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */,
+				8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */,
+				8B9EA984178A5B8200FF7EF9 /* ParseStandardHitting.h */,
+				8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */,
+				8B9D99AE17E8237000B4D0C2 /* ParseAdvancedHitting.h */,
+				8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */,
+			);
+			name = "Hitting Stat Parsers";
+			sourceTree = "<group>";
+		};
+		8BBAF1F417569F100059A638 = {
+			isa = PBXGroup;
+			children = (
+				8BC4EBFA1765BB5F00F769E6 /* Interface Files */,
+				8B0653C117692E8E00B7F1E9 /* Data Type Objects */,
+				8BBAF20617569F100059A638 /* Fangraphs Parser */,
+				8BBAF22317569F100059A638 /* Fangraphs ParserTests */,
+				8BBAF2341756A0BB0059A638 /* HPPLE */,
+				8B0653C01769170800B7F1E9 /* OBJ-C HTML Parser */,
+				8BBAF1FF17569F100059A638 /* Frameworks */,
+				8BBAF1FE17569F100059A638 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BBAF1FE17569F100059A638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF1FD17569F100059A638 /* Fangraphs Parser.app */,
+				8BBAF21D17569F100059A638 /* Fangraphs ParserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BBAF1FF17569F100059A638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF2491756A26F0059A638 /* libxml2.dylib */,
+				8BBAF20017569F100059A638 /* Cocoa.framework */,
+				8BBAF21E17569F100059A638 /* SenTestingKit.framework */,
+				8BBAF20217569F100059A638 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BBAF20217569F100059A638 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF20317569F100059A638 /* AppKit.framework */,
+				8BBAF20417569F100059A638 /* CoreData.framework */,
+				8BBAF20517569F100059A638 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8BBAF20617569F100059A638 /* Fangraphs Parser */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF2531756A9460059A638 /* LoadPage.h */,
+				8BBAF2541756A9460059A638 /* LoadPage.m */,
+				8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */,
+				8BBAF24B1756A3C90059A638 /* MasterParser.h */,
+				8BBAF24C1756A3C90059A638 /* MasterParser.m */,
+				8BBAF20717569F100059A638 /* Supporting Files */,
+			);
+			path = "Fangraphs Parser";
+			sourceTree = "<group>";
+		};
+		8BBAF20717569F100059A638 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF21217569F100059A638 /* AppDelegate.h */,
+				8BBAF21317569F100059A638 /* AppDelegate.m */,
+				8BBAF20817569F100059A638 /* Fangraphs Parser-Info.plist */,
+				8BBAF20917569F100059A638 /* InfoPlist.strings */,
+				8BBAF20C17569F100059A638 /* main.m */,
+				8BBAF20E17569F100059A638 /* Fangraphs Parser-Prefix.pch */,
+				8BBAF20F17569F100059A638 /* Credits.rtf */,
+				8B3C0044176C6686005FABD4 /* MainMenu.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BBAF22317569F100059A638 /* Fangraphs ParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF22917569F100059A638 /* Fangraphs_ParserTests.h */,
+				8BBAF22A17569F100059A638 /* Fangraphs_ParserTests.m */,
+				8BBAF22417569F100059A638 /* Supporting Files */,
+			);
+			path = "Fangraphs ParserTests";
+			sourceTree = "<group>";
+		};
+		8BBAF22417569F100059A638 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF22517569F100059A638 /* Fangraphs ParserTests-Info.plist */,
+				8BBAF22617569F100059A638 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BBAF2341756A0BB0059A638 /* HPPLE */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAF2391756A0D80059A638 /* TFHpple.h */,
+				8BBAF23A1756A0D80059A638 /* TFHpple.m */,
+				8BBAF23B1756A0D80059A638 /* TFHppleElement.h */,
+				8BBAF23C1756A0D80059A638 /* TFHppleElement.m */,
+				8BBAF23D1756A0D80059A638 /* XPathQuery.h */,
+				8BBAF23E1756A0D80059A638 /* XPathQuery.m */,
+			);
+			name = HPPLE;
+			path = "Fangraphs Parser";
+			sourceTree = "<group>";
+		};
+		8BC4EBFA1765BB5F00F769E6 /* Interface Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C0036176C62DA005FABD4 /* AppController.h */,
+				8B3C0037176C62DA005FABD4 /* AppController.m */,
+				8B9B7509177AD18A002335FB /* DataViewCell.h */,
+				8B9B750A177AD18A002335FB /* DataViewCell.m */,
+			);
+			name = "Interface Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BBAF1FC17569F100059A638 /* Fangraphs Parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBAF22E17569F100059A638 /* Build configuration list for PBXNativeTarget "Fangraphs Parser" */;
+			buildPhases = (
+				8BBAF1F917569F100059A638 /* Sources */,
+				8BBAF1FA17569F100059A638 /* Frameworks */,
+				8BBAF1FB17569F100059A638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fangraphs Parser";
+			productName = "Fangraphs Parser";
+			productReference = 8BBAF1FD17569F100059A638 /* Fangraphs Parser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BBAF21C17569F100059A638 /* Fangraphs ParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BBAF23117569F100059A638 /* Build configuration list for PBXNativeTarget "Fangraphs ParserTests" */;
+			buildPhases = (
+				8BBAF21817569F100059A638 /* Sources */,
+				8BBAF21917569F100059A638 /* Frameworks */,
+				8BBAF21A17569F100059A638 /* Resources */,
+				8BBAF21B17569F100059A638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BBAF22217569F100059A638 /* PBXTargetDependency */,
+			);
+			name = "Fangraphs ParserTests";
+			productName = "Fangraphs ParserTests";
+			productReference = 8BBAF21D17569F100059A638 /* Fangraphs ParserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BBAF1F517569F100059A638 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Varun Sharma";
+			};
+			buildConfigurationList = 8BBAF1F817569F100059A638 /* Build configuration list for PBXProject "Fangraphs Parser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BBAF1F417569F100059A638;
+			productRefGroup = 8BBAF1FE17569F100059A638 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BBAF1FC17569F100059A638 /* Fangraphs Parser */,
+				8BBAF21C17569F100059A638 /* Fangraphs ParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BBAF1FB17569F100059A638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF20B17569F100059A638 /* InfoPlist.strings in Resources */,
+				8BBAF21117569F100059A638 /* Credits.rtf in Resources */,
+				8B3C0045176C6686005FABD4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBAF21A17569F100059A638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF22817569F100059A638 /* InfoPlist.strings in Resources */,
+				8B3C0046176C6686005FABD4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BBAF21B17569F100059A638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BBAF1F917569F100059A638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF20D17569F100059A638 /* main.m in Sources */,
+				8BBAF21417569F100059A638 /* AppDelegate.m in Sources */,
+				8BBAF2431756A0D80059A638 /* TFHpple.m in Sources */,
+				8BBAF2451756A0D80059A638 /* TFHppleElement.m in Sources */,
+				8BBAF2471756A0D80059A638 /* XPathQuery.m in Sources */,
+				8BBAF24D1756A3C90059A638 /* MasterParser.m in Sources */,
+				8BBAF2551756A9460059A638 /* LoadPage.m in Sources */,
+				8B9CCE3E1760684E0070C12C /* Player.m in Sources */,
+				8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */,
+				8BC4EC9D1766C5AD00F769E6 /* HTMLParser.m in Sources */,
+				8B0653C41769381F00B7F1E9 /* DuplicateType.m in Sources */,
+				8B3C0038176C62DA005FABD4 /* AppController.m in Sources */,
+				8B9B750B177AD18A002335FB /* DataViewCell.m in Sources */,
+				8B9EA986178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */,
+				8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */,
+				8B9D99B017E8237000B4D0C2 /* ParseAdvancedHitting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BBAF21817569F100059A638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBAF22B17569F100059A638 /* Fangraphs_ParserTests.m in Sources */,
+				8BBAF2441756A0D80059A638 /* TFHpple.m in Sources */,
+				8BBAF2461756A0D80059A638 /* TFHppleElement.m in Sources */,
+				8BBAF2481756A0D80059A638 /* XPathQuery.m in Sources */,
+				8BBAF24E1756A3C90059A638 /* MasterParser.m in Sources */,
+				8BBAF2561756A9460059A638 /* LoadPage.m in Sources */,
+				8BC4EC9C1766C5AD00F769E6 /* HTMLNode.m in Sources */,
+				8BC4EC9E1766C5AD00F769E6 /* HTMLParser.m in Sources */,
+				8B0653C51769381F00B7F1E9 /* DuplicateType.m in Sources */,
+				8B3C0039176C62DA005FABD4 /* AppController.m in Sources */,
+				8B9B750C177AD18A002335FB /* DataViewCell.m in Sources */,
+				8B9EA987178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */,
+				8B8A881717A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BBAF22217569F100059A638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BBAF1FC17569F100059A638 /* Fangraphs Parser */;
+			targetProxy = 8BBAF22117569F100059A638 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BBAF20917569F100059A638 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBAF20A17569F100059A638 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BBAF20F17569F100059A638 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBAF21017569F100059A638 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8BBAF22617569F100059A638 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BBAF22717569F100059A638 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BBAF22C17569F100059A638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BBAF22D17569F100059A638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BBAF22F17569F100059A638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fangraphs Parser/Fangraphs Parser-Prefix.pch";
+				INFOPLIST_FILE = "Fangraphs Parser/Fangraphs Parser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BBAF23017569F100059A638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fangraphs Parser/Fangraphs Parser-Prefix.pch";
+				INFOPLIST_FILE = "Fangraphs Parser/Fangraphs Parser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BBAF23217569F100059A638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fangraphs Parser.app/Contents/MacOS/Fangraphs Parser";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fangraphs Parser/Fangraphs Parser-Prefix.pch";
+				INFOPLIST_FILE = "Fangraphs ParserTests/Fangraphs ParserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8BBAF23317569F100059A638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fangraphs Parser.app/Contents/MacOS/Fangraphs Parser";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fangraphs Parser/Fangraphs Parser-Prefix.pch";
+				INFOPLIST_FILE = "Fangraphs ParserTests/Fangraphs ParserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BBAF1F817569F100059A638 /* Build configuration list for PBXProject "Fangraphs Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBAF22C17569F100059A638 /* Debug */,
+				8BBAF22D17569F100059A638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBAF22E17569F100059A638 /* Build configuration list for PBXNativeTarget "Fangraphs Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBAF22F17569F100059A638 /* Debug */,
+				8BBAF23017569F100059A638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BBAF23117569F100059A638 /* Build configuration list for PBXNativeTarget "Fangraphs ParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBAF23217569F100059A638 /* Debug */,
+				8BBAF23317569F100059A638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BBAF1F517569F100059A638 /* Project object */;
+}
