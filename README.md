@@ -9,6 +9,7 @@ The way it parses is it downloads the player data then sends the Webpage to sepe
 After the data is parsed new formatted data is sent to the AppController which handles the gui.
 
 Fangraphs Parser is written with modularization and object oriented design in mind. 
+One of the large improvments is the parsing and data formatting elements are completly seperated from the UI code.
 The code is far cleaner and better commented than version 1.
 
 Current UI
