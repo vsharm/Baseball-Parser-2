@@ -21,6 +21,9 @@
 		8B9D99B017E8237000B4D0C2 /* ParseAdvancedHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */; };
 		8B9EA986178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */; };
 		8B9EA987178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */; };
+		8BA037311876602B00722E49 /* StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA037301876602B00722E49 /* StringManipulation.m */; };
+		8BA037351876739000722E49 /* ParseBattedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA037341876739000722E49 /* ParseBattedBall.m */; };
+		8BA0373B1879331700722E49 /* ParseMoreBattedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0373A1879331700722E49 /* ParseMoreBattedBall.m */; };
 		8BBAF20117569F100059A638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF20017569F100059A638 /* Cocoa.framework */; };
 		8BBAF20B17569F100059A638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBAF20917569F100059A638 /* InfoPlist.strings */; };
 		8BBAF20D17569F100059A638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF20C17569F100059A638 /* main.m */; };
@@ -73,6 +76,12 @@
 		8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseAdvancedHitting.m; sourceTree = "<group>"; };
 		8B9EA984178A5B8200FF7EF9 /* ParseStandardHitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseStandardHitting.h; sourceTree = "<group>"; };
 		8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseStandardHitting.m; sourceTree = "<group>"; };
+		8BA0372F1876602B00722E49 /* StringManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManipulation.h; sourceTree = "<group>"; };
+		8BA037301876602B00722E49 /* StringManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManipulation.m; sourceTree = "<group>"; };
+		8BA037331876739000722E49 /* ParseBattedBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseBattedBall.h; sourceTree = "<group>"; };
+		8BA037341876739000722E49 /* ParseBattedBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseBattedBall.m; sourceTree = "<group>"; };
+		8BA037391879331700722E49 /* ParseMoreBattedBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMoreBattedBall.h; sourceTree = "<group>"; };
+		8BA0373A1879331700722E49 /* ParseMoreBattedBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMoreBattedBall.m; sourceTree = "<group>"; };
 		8BBAF1FD17569F100059A638 /* Fangraphs Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fangraphs Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBAF20017569F100059A638 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8BBAF20317569F100059A638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -163,8 +172,21 @@
 				8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */,
 				8B9D99AE17E8237000B4D0C2 /* ParseAdvancedHitting.h */,
 				8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */,
+				8BA037331876739000722E49 /* ParseBattedBall.h */,
+				8BA037341876739000722E49 /* ParseBattedBall.m */,
+				8BA037391879331700722E49 /* ParseMoreBattedBall.h */,
+				8BA0373A1879331700722E49 /* ParseMoreBattedBall.m */,
 			);
 			name = "Hitting Stat Parsers";
+			sourceTree = "<group>";
+		};
+		8BA03732187672D100722E49 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8BA0372F1876602B00722E49 /* StringManipulation.h */,
+				8BA037301876602B00722E49 /* StringManipulation.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		8BBAF1F417569F100059A638 = {
@@ -216,6 +238,7 @@
 			children = (
 				8BBAF2531756A9460059A638 /* LoadPage.h */,
 				8BBAF2541756A9460059A638 /* LoadPage.m */,
+				8BA03732187672D100722E49 /* Utilities */,
 				8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */,
 				8BBAF24B1756A3C90059A638 /* MasterParser.h */,
 				8BBAF24C1756A3C90059A638 /* MasterParser.m */,
@@ -398,6 +421,8 @@
 				8BBAF2451756A0D80059A638 /* TFHppleElement.m in Sources */,
 				8BBAF2471756A0D80059A638 /* XPathQuery.m in Sources */,
 				8BBAF24D1756A3C90059A638 /* MasterParser.m in Sources */,
+				8BA037351876739000722E49 /* ParseBattedBall.m in Sources */,
+				8BA037311876602B00722E49 /* StringManipulation.m in Sources */,
 				8BBAF2551756A9460059A638 /* LoadPage.m in Sources */,
 				8B9CCE3E1760684E0070C12C /* Player.m in Sources */,
 				8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */,
@@ -405,6 +430,7 @@
 				8B0653C41769381F00B7F1E9 /* DuplicateType.m in Sources */,
 				8B3C0038176C62DA005FABD4 /* AppController.m in Sources */,
 				8B9B750B177AD18A002335FB /* DataViewCell.m in Sources */,
+				8BA0373B1879331700722E49 /* ParseMoreBattedBall.m in Sources */,
 				8B9EA986178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */,
 				8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */,
 				8B9D99B017E8237000B4D0C2 /* ParseAdvancedHitting.m in Sources */,

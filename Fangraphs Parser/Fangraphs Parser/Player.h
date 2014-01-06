@@ -61,6 +61,28 @@
 @property (nonatomic, copy) NSNumber *wOBA;
 @property (nonatomic, copy) NSNumber *wRCPlus;
 
+//batttedball
+@property (nonatomic, copy) NSNumber *groundballToFlyballRatio;
+@property (nonatomic, copy) NSNumber *lineDrivePercentage;
+@property (nonatomic, copy) NSNumber *groundballPercentage;
+@property (nonatomic, copy) NSNumber *flyballPercentage;
+@property (nonatomic, copy) NSNumber *infieldFlyballPercentage;
+@property (nonatomic, copy) NSNumber *homerunToFlyballRatio;
+@property (nonatomic, copy) NSNumber *infieldHitPercentage;
+@property (nonatomic, copy) NSNumber *buntHitPercentage;
+
+//More Batted Ball
+@property (nonatomic, copy) NSNumber *groundball;
+@property (nonatomic, copy) NSNumber *flyball;
+@property (nonatomic, copy) NSNumber *linedrive;
+@property (nonatomic, copy) NSNumber *infieldFlyball;
+@property (nonatomic, copy) NSNumber *infieldHit;
+@property (nonatomic, copy) NSNumber *bunt;
+@property (nonatomic, copy) NSNumber *bunthit;
+@property (nonatomic, copy) NSNumber *balls;
+@property (nonatomic, copy) NSNumber *strikes;
+@property (nonatomic, copy) NSNumber *pitches;
+
 //Pitching Stats
 
 @end

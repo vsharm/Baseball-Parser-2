@@ -16,6 +16,8 @@
 #import "ParseStandardHitting.h"
 #import "ParseAdvancedHitting.h"
 #import "PlayerInfoAndPosition.h"
+#import "ParseBattedBall.h"
+#import "ParseMoreBattedBall.h"
 @implementation MasterParser
 
 
@@ -138,8 +140,14 @@
     ParseStandardHitting *standard = [[ParseStandardHitting alloc] initWithWebpage:FGPlayerPage];
     PlayerInfoAndPosition *playerInfo = [[PlayerInfoAndPosition alloc] initWithWebpage:FGPlayerPage];
     ParseAdvancedHitting *advanced = [[ParseAdvancedHitting alloc] initWithWebpage:FGPlayerPage];
+    ParseBattedBall *battedBall = [[ParseBattedBall alloc] initWithWebpage:FGPlayerPage];
+    ParseMoreBattedBall *moreBattedBall = [[ParseMoreBattedBall alloc] initWithWebpage:FGPlayerPage];
+
     [queue addOperation:standard];
     [queue addOperation:playerInfo];
+    [queue addOperation:advanced];
+    [queue addOperation:battedBall];
+    [queue addOperation:moreBattedBall];
     [queue waitUntilAllOperationsAreFinished];
 }
 

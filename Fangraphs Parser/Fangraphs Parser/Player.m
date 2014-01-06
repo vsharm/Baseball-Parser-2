@@ -56,5 +56,28 @@
 @synthesize wOBA = _wOBA;
 @synthesize wRCPlus = _wRCPlus;
 
+//battedball
+@synthesize groundballToFlyballRatio = _groundballToFlyballRatio;
+@synthesize lineDrivePercentage = _lineDrivePercentage;
+@synthesize groundballPercentage = _groundballPercentage;
+@synthesize flyballPercentage = _flyballPercentage;
+@synthesize infieldFlyballPercentage = _infieldFlyballPercentage;
+@synthesize homerunToFlyballRatio = _homerunToFlyballRatio;
+@synthesize infieldHitPercentage = _infieldHitPercentage;
+@synthesize buntHitPercentage = _buntHitPercentage;
+
+//More Batted Ball
+@synthesize groundball = _groundball;
+@synthesize flyball = _flyball;
+@synthesize linedrive = _linedrive;
+@synthesize infieldFlyball = _infieldFlyball;
+@synthesize infieldHit = _infieldHit;
+@synthesize bunt = _bunt;
+@synthesize bunthit = _bunthit;
+@synthesize balls = _balls;
+@synthesize strikes = _strikes;
+@synthesize pitches = _pitches;
+
+
 
 @end

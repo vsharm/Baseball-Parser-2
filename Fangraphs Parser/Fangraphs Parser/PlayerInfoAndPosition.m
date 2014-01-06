@@ -23,7 +23,7 @@
     playerInfoData = [[NSArray alloc] initWithArray:[self getPlayer]];
     
     //Post Notification
-    NSDictionary* PlayerInfoStats = [NSDictionary dictionaryWithObject:playerInfoData                                                   forKey:@"PlayerInfoStats"];
+    NSDictionary* PlayerInfoStats = [NSDictionary dictionaryWithObject:playerInfoData forKey:@"PlayerInfoStats"];
     
     dispatch_async(dispatch_get_main_queue(),^{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"PlayerInfoStats" object:nil userInfo:PlayerInfoStats];
