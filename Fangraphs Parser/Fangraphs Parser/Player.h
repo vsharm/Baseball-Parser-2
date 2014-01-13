@@ -121,6 +121,28 @@
 @property (nonatomic, copy) NSNumber *knuckleballPercentage;
 @property (nonatomic, copy) NSNumber *unknownPercentage;
 
+//Fielding
+//games
+@property (nonatomic, copy) NSNumber *gamesStarted;
+@property (nonatomic, copy) NSNumber *fieldingInnings;
+@property (nonatomic, copy) NSNumber *putOuts;
+@property (nonatomic, copy) NSNumber *assists;
+@property (nonatomic, copy) NSNumber *errors;
+@property (nonatomic, copy) NSNumber *fieldingErrors;
+@property (nonatomic, copy) NSNumber *throwingErrors;
+@property (nonatomic, copy) NSNumber *doublePlays;
+@property (nonatomic, copy) NSNumber *doublePlaysStarted;
+@property (nonatomic, copy) NSNumber *doublePlaysTurned;
+@property (nonatomic, copy) NSNumber *doublePlaysFinished;
+@property (nonatomic, copy) NSNumber *firstBasemenScoops;
+@property (nonatomic, copy) NSNumber *stolenBasesCatching;
+@property (nonatomic, copy) NSNumber *caughtStealingCatching;
+@property (nonatomic, copy) NSNumber *passedBalls;
+@property (nonatomic, copy) NSNumber *wildPitches;
+@property (nonatomic, copy) NSNumber *fieldingPercentage;
+@property (nonatomic, copy) NSNumber *totalZone;
+
+
 
 
 

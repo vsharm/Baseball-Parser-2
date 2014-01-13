@@ -107,6 +107,7 @@
 @synthesize knuckleballPercentagePFX = _knuckleballPercentagePFX;
 @synthesize unknownPercentagePFX = _unknownPercentagePFX;
 
+//PitchType
 @synthesize fastballPercentage = _fastballPercentage;
 @synthesize sliderPercentage = _sliderPercentage;
 @synthesize cutterPercentage = _cutterPercentage;
@@ -115,6 +116,40 @@
 @synthesize splitfingerPercentage = _splitfingerPercentage;
 @synthesize knuckleballPercentage = _knuckleballPercentage;
 @synthesize unknownPercentage = _unknownPercentage;
+
+//Fielding
+
+
+//games
+@synthesize gamesStarted = _gamesStarted;
+@synthesize fieldingInnings = _fieldingInnings;
+@synthesize putOuts = _putOuts;
+@synthesize assists = _assists;
+@synthesize errors = _errors;
+@synthesize fieldingErrors = _fieldingErrors;
+@synthesize throwingErrors = _throwingErrors;
+@synthesize doublePlays = _doublePlays;
+@synthesize doublePlaysStarted = _doublePlaysStarted;
+@synthesize doublePlaysTurned = _doublePlaysTurned;
+@synthesize doublePlaysFinished = _doublePlaysFinished;
+@synthesize firstBasemenScoops = _firstBasemenScoops;
+@synthesize stolenBasesCatching = _stolenBasesCatching;
+@synthesize caughtStealingCatching = _caughtStealingCatching;
+@synthesize passedBalls = _passedBalls;
+@synthesize wildPitches = _wildPitches;
+@synthesize fieldingPercentage = _fieldingPercentage;
+@synthesize totalZone = _totalZone;
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

@@ -21,6 +21,7 @@
 #import "ParseWinProbability.h"
 #import "ParsePitchType.h"
 #import "ParsePitchFXPitchType.h"
+#import "ParseFielding.h"
 
 @implementation MasterParser
 
@@ -149,6 +150,8 @@
     ParseWinProbability *winProbability = [[ParseWinProbability alloc] initWithWebpage:FGPlayerPage];
     ParsePitchType *pitchType = [[ParsePitchType alloc] initWithWebpage:FGPlayerPage];
     ParsePitchFXPitchType *pitchTypeFX = [[ParsePitchFXPitchType alloc] initWithWebpage:FGPlayerPage];
+    ParseFielding *fielding = [[ParseFielding alloc] initWithWebpage:FGPlayerPage];
+
 
     [queue addOperation:standard];
     [queue addOperation:playerInfo];
@@ -158,6 +161,7 @@
     [queue addOperation:winProbability];
     [queue addOperation:pitchType];
     [queue addOperation:pitchTypeFX];
+    [queue addOperation:fielding];
     [queue waitUntilAllOperationsAreFinished];
 }
 
