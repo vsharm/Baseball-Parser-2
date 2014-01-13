@@ -142,9 +142,29 @@
 @property (nonatomic, copy) NSNumber *fieldingPercentage;
 @property (nonatomic, copy) NSNumber *totalZone;
 
+//Advanced Fielding
 
 
-
+@property (nonatomic, copy) NSNumber *stolenBaseRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *doublePaysRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *armRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *goodFieldingPlaysRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *plusMinusRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *defensiveRunsSaved;
+@property (nonatomic, copy) NSNumber *ballsInZone;
+@property (nonatomic, copy) NSNumber *totalPlaysMade;
+@property (nonatomic, copy) NSNumber *revisedZoneRating;
+@property (nonatomic, copy) NSNumber *outOfZonePlays;
+@property (nonatomic, copy) NSNumber *expectedCatcherPassedPitches;
+@property (nonatomic, copy) NSNumber *blockedPitchesRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *totalZoneLocationData;
+@property (nonatomic, copy) NSNumber *fansScoutingReportRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *uzrArmRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *uzrDoublePlayRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *uzrRangeRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *uzrErrorRunsAboveAvg;
+@property (nonatomic, copy) NSNumber *uzr;
+@property (nonatomic, copy) NSNumber *uzrOver150;
 
 
 @end

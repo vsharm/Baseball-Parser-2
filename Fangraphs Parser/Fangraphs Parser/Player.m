@@ -140,10 +140,29 @@
 @synthesize fieldingPercentage = _fieldingPercentage;
 @synthesize totalZone = _totalZone;
 
+//Advanced Fielding
 
-
-
-
+//innigns
+@synthesize stolenBaseRunsAboveAvg = _stolenBaseRunsAboveAvgFB;
+@synthesize doublePaysRunsAboveAvg = _doublePaysRunsAboveAvgFB;
+@synthesize armRunsAboveAvg = _armRunsAboveAvg;
+@synthesize goodFieldingPlaysRunsAboveAvg = _goodFieldingPlaysRunsAboveAvgFB;
+@synthesize plusMinusRunsAboveAvg = _plusMinusRunsAboveAvgFB;
+@synthesize defensiveRunsSaved = _defensiveRunsSavedFB;
+@synthesize ballsInZone = _ballsInZone;
+@synthesize totalPlaysMade = _totalPlaysMade;
+@synthesize revisedZoneRating = _revisedZoneRating;
+@synthesize outOfZonePlays = _outOfZonePlays;
+@synthesize expectedCatcherPassedPitches = _expectedCatcherPassedPitches;
+@synthesize blockedPitchesRunsAboveAvg = _blockedPitchesRunsAboveAvg;
+@synthesize totalZoneLocationData = _totalZoneLocationData;
+@synthesize fansScoutingReportRunsAboveAvg = _fansScoutingReportRunsAboveAvg;
+@synthesize uzrArmRunsAboveAvg = _uzrArmRunsAboveAvg;
+@synthesize uzrDoublePlayRunsAboveAvg = _uzrDoublePlayRunsAboveAvg;
+@synthesize uzrRangeRunsAboveAvg = _uzrRangeRunsAboveAvg;
+@synthesize uzrErrorRunsAboveAvg = _uzrErrorRunsAboveAvg;
+@synthesize uzr = _uzr;
+@synthesize uzrOver150 = _uzrOver150;
 
 
 
