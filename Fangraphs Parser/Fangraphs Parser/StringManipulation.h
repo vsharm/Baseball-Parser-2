@@ -13,3 +13,4 @@
 -(NSNumber  *)removePercentage:(NSString *)inputStr;
 
 @end
+

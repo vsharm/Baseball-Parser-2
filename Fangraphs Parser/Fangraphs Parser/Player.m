@@ -78,6 +78,43 @@
 @synthesize strikes = _strikes;
 @synthesize pitches = _pitches;
 
+//Win Probability Added
+
+@synthesize winProbabilityAdded = _winProbabilityAdded;
+@synthesize negativeWinProbability = _negativeWinProbability;
+@synthesize positiveWinProbability = _positiveWinProbability;
+@synthesize runsAboveAverage24 = _runsAboveAverage24;
+@synthesize runsAboveAverageWins = _runsAboveAverageWins;
+@synthesize pLeverageIndex = _pLeverageIndex;
+@synthesize pinchHitLeverageIndex = _pinchHitLeverageIndex;
+@synthesize pinchHit = _pinchHit;
+@synthesize winProbabilityOverLeverageIndex = _winProbabilityOverLeverageIndex;
+@synthesize clutch = _clutch;
+
+//PFX Pitch Type
+@synthesize fastballPercentagePFX = _fastballPercentagePFX;
+@synthesize twoseamPercentagePFX = _twoseamPercentagePFX;
+@synthesize cutterPercentagePFX = _cutterPercentagePFX;
+@synthesize splitFastballPercentagePFX = _splitFastballPercentagePFX;
+@synthesize sinkerPercentagePFX = _sinkerPercentagePFX;
+@synthesize sliderPercentagePFX = _sliderPercentagePFXPFX;
+@synthesize curveballPercentagePFX = _curveballPercentagePFX;
+@synthesize knuckleCurveballPercentagePFX = _knuckleCurveballPercentagePFX;
+@synthesize forkballPercentagePFX = _forkballPercentagePFX;
+@synthesize ephusPercentagePFX = _ephusPercentagePFX;
+@synthesize changeupPercentagePFX = _changeupPercentagePFX;
+@synthesize screwballPercentagePFX = _screwballPercentagePFX;
+@synthesize knuckleballPercentagePFX = _knuckleballPercentagePFX;
+@synthesize unknownPercentagePFX = _unknownPercentagePFX;
+
+@synthesize fastballPercentage = _fastballPercentage;
+@synthesize sliderPercentage = _sliderPercentage;
+@synthesize cutterPercentage = _cutterPercentage;
+@synthesize curveBallPercentage = _curveBallPercentage;
+@synthesize changeupPercentage = _changeupPercentage;
+@synthesize splitfingerPercentage = _splitfingerPercentage;
+@synthesize knuckleballPercentage = _knuckleballPercentage;
+@synthesize unknownPercentage = _unknownPercentage;
 
 
 @end

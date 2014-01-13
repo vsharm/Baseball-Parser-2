@@ -11,10 +11,22 @@
 @implementation StringManipulation
 
 -(NSNumber  *)removePercentage:(NSString *)inputStr {
+    NSNumber *retNumber = [[NSNumber alloc] initWithInt:0];
     NSNumberFormatter *temp = [[NSNumberFormatter alloc] init];
-    if ( [inputStr length] > 0)
-        inputStr = [inputStr substringToIndex:[inputStr length] - 2];
-    NSNumber *retNumber = [temp numberFromString: inputStr];
+    
+    
+    if ( [inputStr length] >= 2){
+        if( [inputStr characterAtIndex: [inputStr length]-1] ==  41){
+            inputStr = [inputStr substringToIndex:[inputStr length] - 8];
+        }
+        else if( [inputStr characterAtIndex: [inputStr length]-2] ==  0){
+            inputStr = [inputStr substringToIndex:[inputStr length] - 2];
+        }
+        else{
+            inputStr = [inputStr substringToIndex:[inputStr length] - 1];
+        }
+        retNumber = [temp numberFromString: inputStr];
+    }
     return retNumber;
 }
 

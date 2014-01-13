@@ -83,6 +83,46 @@
 @property (nonatomic, copy) NSNumber *strikes;
 @property (nonatomic, copy) NSNumber *pitches;
 
-//Pitching Stats
+//Win Probability Added
+@property (nonatomic, copy) NSNumber *winProbabilityAdded;
+@property (nonatomic, copy) NSNumber *negativeWinProbability;
+@property (nonatomic, copy) NSNumber *positiveWinProbability;
+@property (nonatomic, copy) NSNumber *runsAboveAverage24;
+@property (nonatomic, copy) NSNumber *runsAboveAverageWins;
+@property (nonatomic, copy) NSNumber *pLeverageIndex;
+@property (nonatomic, copy) NSNumber *pinchHitLeverageIndex;
+@property (nonatomic, copy) NSNumber *pinchHit;
+@property (nonatomic, copy) NSNumber *winProbabilityOverLeverageIndex;
+@property (nonatomic, copy) NSNumber *clutch;
+
+//Pitch Type FX
+@property (nonatomic, copy) NSNumber *fastballPercentagePFX;
+@property (nonatomic, copy) NSNumber *twoseamPercentagePFX;
+@property (nonatomic, copy) NSNumber *cutterPercentagePFX;
+@property (nonatomic, copy) NSNumber *splitFastballPercentagePFX;
+@property (nonatomic, copy) NSNumber *sinkerPercentagePFX;
+@property (nonatomic, copy) NSNumber *sliderPercentagePFX;
+@property (nonatomic, copy) NSNumber *curveballPercentagePFX;
+@property (nonatomic, copy) NSNumber *knuckleCurveballPercentagePFX;
+@property (nonatomic, copy) NSNumber *ephusPercentagePFX;
+@property (nonatomic, copy) NSNumber *forkballPercentagePFX;
+@property (nonatomic, copy) NSNumber *changeupPercentagePFX;
+@property (nonatomic, copy) NSNumber *screwballPercentagePFX;
+@property (nonatomic, copy) NSNumber *knuckleballPercentagePFX;
+@property (nonatomic, copy) NSNumber *unknownPercentagePFX;
+
+//Pitch Type
+@property (nonatomic, copy) NSNumber *fastballPercentage;
+@property (nonatomic, copy) NSNumber *sliderPercentage;
+@property (nonatomic, copy) NSNumber *cutterPercentage;
+@property (nonatomic, copy) NSNumber *curveBallPercentage;
+@property (nonatomic, copy) NSNumber *changeupPercentage;
+@property (nonatomic, copy) NSNumber *splitfingerPercentage;
+@property (nonatomic, copy) NSNumber *knuckleballPercentage;
+@property (nonatomic, copy) NSNumber *unknownPercentage;
+
+
+
+
 
 @end

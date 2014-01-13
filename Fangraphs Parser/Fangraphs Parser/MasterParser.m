@@ -18,6 +18,10 @@
 #import "PlayerInfoAndPosition.h"
 #import "ParseBattedBall.h"
 #import "ParseMoreBattedBall.h"
+#import "ParseWinProbability.h"
+#import "ParsePitchType.h"
+#import "ParsePitchFXPitchType.h"
+
 @implementation MasterParser
 
 
@@ -142,12 +146,18 @@
     ParseAdvancedHitting *advanced = [[ParseAdvancedHitting alloc] initWithWebpage:FGPlayerPage];
     ParseBattedBall *battedBall = [[ParseBattedBall alloc] initWithWebpage:FGPlayerPage];
     ParseMoreBattedBall *moreBattedBall = [[ParseMoreBattedBall alloc] initWithWebpage:FGPlayerPage];
+    ParseWinProbability *winProbability = [[ParseWinProbability alloc] initWithWebpage:FGPlayerPage];
+    ParsePitchType *pitchType = [[ParsePitchType alloc] initWithWebpage:FGPlayerPage];
+    ParsePitchFXPitchType *pitchTypeFX = [[ParsePitchFXPitchType alloc] initWithWebpage:FGPlayerPage];
 
     [queue addOperation:standard];
     [queue addOperation:playerInfo];
     [queue addOperation:advanced];
     [queue addOperation:battedBall];
     [queue addOperation:moreBattedBall];
+    [queue addOperation:winProbability];
+    [queue addOperation:pitchType];
+    [queue addOperation:pitchTypeFX];
     [queue waitUntilAllOperationsAreFinished];
 }
 
