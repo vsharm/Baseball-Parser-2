@@ -121,6 +121,90 @@
 @property (nonatomic, copy) NSNumber *knuckleballPercentage;
 @property (nonatomic, copy) NSNumber *unknownPercentage;
 
+//PFX/Pitch Velocity
+@property (nonatomic, copy) NSNumber *fastballVelocity;
+@property (nonatomic, copy) NSNumber *twoseamVelocity;
+@property (nonatomic, copy) NSNumber *cutterVelocity;
+@property (nonatomic, copy) NSNumber *splitFastballVelocity;
+@property (nonatomic, copy) NSNumber *sinkerVelocity;
+@property (nonatomic, copy) NSNumber *sliderVelocity;
+@property (nonatomic, copy) NSNumber *curveballVelocity;
+@property (nonatomic, copy) NSNumber *knuckleCurveballVelocity;
+@property (nonatomic, copy) NSNumber *forkballVelocity;
+@property (nonatomic, copy) NSNumber *ephusVelocity;
+@property (nonatomic, copy) NSNumber *changeupVelocity;
+@property (nonatomic, copy) NSNumber *screwballVelocity;
+@property (nonatomic, copy) NSNumber *knuckleballVelocity;
+@property (nonatomic, copy) NSNumber *unknownVelocity;
+
+//Pitch Values
+@property (nonatomic, copy) NSNumber *weightedFastball;
+@property (nonatomic, copy) NSNumber *weightedSlider;
+@property (nonatomic, copy) NSNumber *weightedCutter;
+@property (nonatomic, copy) NSNumber *weightedCurveball;
+@property (nonatomic, copy) NSNumber *weightedChangeup;
+@property (nonatomic, copy) NSNumber *weightedSplitfinger;
+@property (nonatomic, copy) NSNumber *weightedKnuckleball;
+@property (nonatomic, copy) NSNumber *weightedFastballOver100;
+@property (nonatomic, copy) NSNumber *weightedSliderOver100;
+@property (nonatomic, copy) NSNumber *weightedCutterOver100;
+@property (nonatomic, copy) NSNumber *weightedCurveballOver100;
+@property (nonatomic, copy) NSNumber *weightedChangeupOver100;
+@property (nonatomic, copy) NSNumber *weightedSplitfingerOver100;
+@property (nonatomic, copy) NSNumber *weightedKnuckleballOver100;
+
+//Pitch FX Pitch Value over 100
+@property (nonatomic, copy) NSNumber *fastballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *twoseamValueOver100PFX;
+@property (nonatomic, copy) NSNumber *cutterValueOver100PFX;
+@property (nonatomic, copy) NSNumber *splitFastballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *sinkerValueOver100PFX;
+@property (nonatomic, copy) NSNumber *sliderValueOver100PFX;
+@property (nonatomic, copy) NSNumber *curveballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *knuckleCurveballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *ephusValueOver100PFX;
+@property (nonatomic, copy) NSNumber *forkballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *changeupValueOver100PFX;
+@property (nonatomic, copy) NSNumber *screwballValueOver100PFX;
+@property (nonatomic, copy) NSNumber *knuckleballValueOver100PFX;
+
+//Pitch FX Pitch Value
+@property (nonatomic, copy) NSNumber *weightedFastballPFX;
+@property (nonatomic, copy) NSNumber *weightedTwoseamPFX;
+@property (nonatomic, copy) NSNumber *weightedCutterPFX;
+@property (nonatomic, copy) NSNumber *weightedSplitFastballPFX;
+@property (nonatomic, copy) NSNumber *weightedSinkerPFX;
+@property (nonatomic, copy) NSNumber *weightedSliderPFX;
+@property (nonatomic, copy) NSNumber *weightedCurveballPFX;
+@property (nonatomic, copy) NSNumber *weightedKnuckleCurveballPFX;
+@property (nonatomic, copy) NSNumber *weightedEphusPFX;
+@property (nonatomic, copy) NSNumber *weightedForkballPFX;
+@property (nonatomic, copy) NSNumber *weightedChangeupPFX;
+@property (nonatomic, copy) NSNumber *weightedScrewballPFX;
+@property (nonatomic, copy) NSNumber *weightedKnuckleballPFX;
+
+//Plate Dicipline
+@property (nonatomic, copy) NSNumber *oSwingPercentage;
+@property (nonatomic, copy) NSNumber *zSwingPercentage;
+@property (nonatomic, copy) NSNumber *swingPercentage;
+@property (nonatomic, copy) NSNumber *oContactPercentage;
+@property (nonatomic, copy) NSNumber *zContactPercentage;
+@property (nonatomic, copy) NSNumber *contactPercentage;
+@property (nonatomic, copy) NSNumber *zonePercentage;
+@property (nonatomic, copy) NSNumber *fStrikePercentage;
+@property (nonatomic, copy) NSNumber *swingingStrikePercentage;
+
+
+//Pitch FX Plate Dicipline
+@property (nonatomic, copy) NSNumber *oSwingPercentagePFX;
+@property (nonatomic, copy) NSNumber *zSwingPercentagePFX;
+@property (nonatomic, copy) NSNumber *swingPercentagePFX;
+@property (nonatomic, copy) NSNumber *oContactPercentagePFX;
+@property (nonatomic, copy) NSNumber *zContactPercentagePFX;
+@property (nonatomic, copy) NSNumber *contactPercentagePFX;
+@property (nonatomic, copy) NSNumber *zonePercentagePFX;
+@property (nonatomic, copy) NSNumber *pacePercentagePFX;
+
 //Fielding
 //games
 @property (nonatomic, copy) NSNumber *gamesStarted;
@@ -142,9 +226,8 @@
 @property (nonatomic, copy) NSNumber *fieldingPercentage;
 @property (nonatomic, copy) NSNumber *totalZone;
 
+
 //Advanced Fielding
-
-
 @property (nonatomic, copy) NSNumber *stolenBaseRunsAboveAvg;
 @property (nonatomic, copy) NSNumber *doublePaysRunsAboveAvg;
 @property (nonatomic, copy) NSNumber *armRunsAboveAvg;
@@ -166,5 +249,18 @@
 @property (nonatomic, copy) NSNumber *uzr;
 @property (nonatomic, copy) NSNumber *uzrOver150;
 
+//Value
+@property (nonatomic, copy) NSNumber *batting;
+@property (nonatomic, copy) NSNumber *baseRunning;
+@property (nonatomic, copy) NSNumber *fielding;
+@property (nonatomic, copy) NSNumber *positional;
+@property (nonatomic, copy) NSNumber *offense;
+@property (nonatomic, copy) NSNumber *defense;
+@property (nonatomic, copy) NSNumber *league;
+@property (nonatomic, copy) NSNumber *replacement;
+@property (nonatomic, copy) NSNumber *runsAboveReplacement;
+@property (nonatomic, copy) NSNumber *winsAboveReplacement;
+@property (nonatomic, copy) NSNumber *dollars;
+@property (nonatomic, copy) NSNumber *salary;
 
 @end

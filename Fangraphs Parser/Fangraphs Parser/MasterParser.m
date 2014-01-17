@@ -23,6 +23,9 @@
 #import "ParsePitchFXPitchType.h"
 #import "ParseFielding.h"
 #import "ParseAdvancedFielding.h"
+#import "ParsePitchFXPitchVelocity.h"
+#import "ParsePitchValues.h"
+#import "ParsePitchFXPitchValues.h"
 
 
 @implementation MasterParser
@@ -154,18 +157,24 @@
     ParsePitchFXPitchType *pitchTypeFX = [[ParsePitchFXPitchType alloc] initWithWebpage:FGPlayerPage];
     ParseFielding *fielding = [[ParseFielding alloc] initWithWebpage:FGPlayerPage];
     ParseAdvancedFielding *advancedFielding = [[ParseAdvancedFielding alloc] initWithWebpage:FGPlayerPage];
+    ParsePitchFXPitchVelocity *pitchVelocity = [[ParsePitchFXPitchVelocity alloc] initWithWebpage:FGPlayerPage];
+    ParsePitchValues *pitchValues = [[ParsePitchValues alloc] initWithWebpage:FGPlayerPage];
+    ParsePitchFXPitchValues *pitchFXValues = [[ParsePitchFXPitchValues alloc] initWithWebpage:FGPlayerPage];
 
 
-//    [queue addOperation:standard];
-//    [queue addOperation:playerInfo];
-//    [queue addOperation:advanced];
-//    [queue addOperation:battedBall];
-//    [queue addOperation:moreBattedBall];
-//    [queue addOperation:winProbability];
-//    [queue addOperation:pitchType];
-//    [queue addOperation:pitchTypeFX];
-//    [queue addOperation:fielding];
+    [queue addOperation:standard];
+    [queue addOperation:playerInfo];
+    [queue addOperation:advanced];
+    [queue addOperation:battedBall];
+    [queue addOperation:moreBattedBall];
+    [queue addOperation:winProbability];
+    [queue addOperation:pitchType];
+    [queue addOperation:pitchTypeFX];
+    [queue addOperation:fielding];
     [queue addOperation:advancedFielding];
+    [queue addOperation:pitchVelocity];
+    [queue addOperation:pitchValues];
+    [queue addOperation:pitchFXValues];
     [queue waitUntilAllOperationsAreFinished];
 }
 

@@ -117,9 +117,77 @@
 @synthesize knuckleballPercentage = _knuckleballPercentage;
 @synthesize unknownPercentage = _unknownPercentage;
 
+//Pitch Values
+@synthesize weightedFastball = _weightedFastball;
+@synthesize weightedSlider = _weightedSlider;
+@synthesize weightedCutter = _weightedCutter;
+@synthesize weightedCurveball = _weightedCurveball;
+@synthesize weightedChangeup = _weightedChangeup;
+@synthesize weightedSplitfinger = _weightedSplitfinger;
+@synthesize weightedKnuckleball = _weightedKnuckleball;
+@synthesize weightedFastballOver100 = _weightedFastballOver100;
+@synthesize weightedSliderOver100 = _weightedSliderOver100;
+@synthesize weightedCutterOver100 = _weightedCutterOver100;
+@synthesize weightedCurveballOver100 = _weightedCurveballOver100;
+@synthesize weightedChangeupOver100 = _weightedChangeupOver100;
+@synthesize weightedSplitfingerOver100 = _weightedSplitfingerOver100;
+@synthesize weightedKnuckleballOver100 = _weightedKnuckleballOver100;
+
+//PITCHf/x Pitch Velocity
+@synthesize fastballVelocity = _fastballVelocity;
+@synthesize twoseamVelocity = _twoseamVelocity;
+@synthesize cutterVelocity = _cutterVelocity;
+@synthesize splitFastballVelocity = _splitFastballVelocity;
+@synthesize sinkerVelocity = _sinkerVelocity;
+@synthesize sliderVelocity = _sliderVelocity;
+@synthesize curveballVelocity = _curveballVelocity;
+@synthesize knuckleCurveballVelocity = _knuckleCurveballVelocity;
+@synthesize forkballVelocity = _forkballVelocity;
+@synthesize ephusVelocity = _ephusVelocity;
+@synthesize changeupVelocity = _changeupVelocity;
+@synthesize screwballVelocity = _screwballVelocity;
+@synthesize knuckleballVelocity = _knuckleballVelocity;
+@synthesize unknownVelocity = _unknownVelocity;
+
+//Pate Dicipline
+@synthesize oSwingPercentage = _oSwingPercentage;
+@synthesize zSwingPercentage = _zSwingPercentage;
+@synthesize swingPercentage = _swingPercentage;
+@synthesize oContactPercentage = _oContactPercentage;
+@synthesize zContactPercentage = _zContactPercentage;
+@synthesize contactPercentage = _contactPercentage;
+@synthesize zonePercentage = _zonePercentage;
+@synthesize fStrikePercentage = _fStrikePercentage;
+@synthesize swingingStrikePercentage = _swingingStrikePercentage;
+
+//Pitch FX Plate Dicipline
+@synthesize oSwingPercentagePFX = _oSwingPercentagePFX;
+@synthesize zSwingPercentagePFX = _zSwingPercentagePFX;
+@synthesize swingPercentagePFX = _swingPercentagePFX;
+@synthesize oContactPercentagePFX = _oContactPercentagePFX;
+@synthesize zContactPercentagePFX = _zContactPercentagePFX;
+@synthesize contactPercentagePFX = _contactPercentagePFX;
+@synthesize zonePercentagePFX = _zonePercentagePFX;
+@synthesize pacePercentagePFX = _pacePercentagePFX;
+
+//Pitch FX Pitch Value Over 100
+@synthesize fastballValueOver100PFX = _fastballValueOver100PFX;
+@synthesize twoseamValueOver100PFX = _twoseamValueOver100PFX;
+@synthesize cutterValueOver100PFX = _cutterValueOver100PFX;
+@synthesize splitFastballValueOver100PFX = _splitFastballValueOver100PFX;
+@synthesize sinkerValueOver100PFX = _sinkerValueOver100PFX;
+@synthesize sliderValueOver100PFX = _sliderValueOver100PFX;
+@synthesize curveballValueOver100PFX = _curveballValueOver100PFX;
+@synthesize knuckleCurveballValueOver100PFX = _knuckleCurveballValueOver100PFX;
+@synthesize ephusValueOver100PFX = _ephusValueOver100PFX;
+@synthesize forkballValueOver100PFX = _forkballValueOver100PFX;
+@synthesize changeupValueOver100PFX = _changeupValueOver100PFX;
+@synthesize screwballValueOver100PFX = _screwballValueOver100PFX;
+@synthesize knuckleballValueOver100PFX = _knuckleballValueOver100PFX;
+
+//
+
 //Fielding
-
-
 //games
 @synthesize gamesStarted = _gamesStarted;
 @synthesize fieldingInnings = _fieldingInnings;
@@ -164,10 +232,35 @@
 @synthesize uzr = _uzr;
 @synthesize uzrOver150 = _uzrOver150;
 
+//Pitch FX Pitch Value
+@synthesize weightedFastballPFX = _weightedFastballPFX;
+@synthesize weightedTwoseamPFX = _weightedTwoseamPFX;
+@synthesize weightedCutterPFX = _weightedCutterPFX;
+@synthesize weightedSplitFastballPFX = _weightedSplitFastballPFX;
+@synthesize weightedSinkerPFX = _weightedSinkerPFX;
+@synthesize weightedSliderPFX = _weightedSliderPFX;
+@synthesize weightedCurveballPFX = _weightedCurveballPFX;
+@synthesize weightedKnuckleCurveballPFX = _weightedKnuckleCurveballPFX;
+@synthesize weightedEphusPFX = _weightedEphusPFX;
+@synthesize weightedForkballPFX = _weightedForkballPFX;
+@synthesize weightedChangeupPFX = _weightedChangeupPFX;
+@synthesize weightedScrewballPFX = _weightedScrewballPFX;
+@synthesize weightedKnuckleballPFX = _weightedKnuckleballPFX;
 
+//Value
 
-
-
+@synthesize batting = _batting;
+@synthesize baseRunning = _baseRunning;
+@synthesize fielding = _fielding;
+@synthesize positional = _positional;
+@synthesize offense = _offense;
+@synthesize defense = _defense;
+@synthesize league = _league;
+@synthesize replacement = _replacement;
+@synthesize runsAboveReplacement = _runsAboveReplacement;
+@synthesize winsAboveReplacement = _winsAboveReplacement;
+@synthesize dollars = _dollars;
+@synthesize salary = _salary;
 
 
 

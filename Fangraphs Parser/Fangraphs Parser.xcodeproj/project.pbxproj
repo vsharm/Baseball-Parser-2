@@ -18,6 +18,7 @@
 		8B52F6C21882245E00CAB729 /* ParsePitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F6C11882245E00CAB729 /* ParsePitchType.m */; };
 		8B7FB3C018836E9200843242 /* ParseFielding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB3BF18836E9200843242 /* ParseFielding.m */; };
 		8B7FB3C318837B6600843242 /* ParseAdvancedFielding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB3C218837B6600843242 /* ParseAdvancedFielding.m */; };
+		8B8054941888C1CC00D88832 /* ParsePitchFXPitchVelocity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8054931888C1CC00D88832 /* ParsePitchFXPitchVelocity.m */; };
 		8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
 		8B8A881717A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
 		8B9B750B177AD18A002335FB /* DataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B750A177AD18A002335FB /* DataViewCell.m */; };
@@ -53,6 +54,8 @@
 		8BC4EC9C1766C5AD00F769E6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC981766C5AD00F769E6 /* HTMLNode.m */; };
 		8BC4EC9D1766C5AD00F769E6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8BC4EC9E1766C5AD00F769E6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */; };
+		8BE6AF13188902C100F827C6 /* ParsePitchValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6AF12188902C100F827C6 /* ParsePitchValues.m */; };
+		8BE6AF1618890C6900F827C6 /* ParsePitchFXPitchValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6AF1518890C6900F827C6 /* ParsePitchFXPitchValues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,8 @@
 		8B7FB3BF18836E9200843242 /* ParseFielding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseFielding.m; sourceTree = "<group>"; };
 		8B7FB3C118837B6600843242 /* ParseAdvancedFielding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseAdvancedFielding.h; sourceTree = "<group>"; };
 		8B7FB3C218837B6600843242 /* ParseAdvancedFielding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseAdvancedFielding.m; sourceTree = "<group>"; };
+		8B8054921888C1CC00D88832 /* ParsePitchFXPitchVelocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchFXPitchVelocity.h; sourceTree = "<group>"; };
+		8B8054931888C1CC00D88832 /* ParsePitchFXPitchVelocity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePitchFXPitchVelocity.m; sourceTree = "<group>"; };
 		8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInfoAndPosition.h; sourceTree = "<group>"; };
 		8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerInfoAndPosition.m; sourceTree = "<group>"; };
 		8B9B7509177AD18A002335FB /* DataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewCell.h; sourceTree = "<group>"; };
@@ -130,6 +135,10 @@
 		8BC4EC981766C5AD00F769E6 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = ../HTMLNode.m; sourceTree = "<group>"; };
 		8BC4EC991766C5AD00F769E6 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = ../HTMLParser.h; sourceTree = "<group>"; };
 		8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = ../HTMLParser.m; sourceTree = "<group>"; };
+		8BE6AF11188902C100F827C6 /* ParsePitchValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchValues.h; sourceTree = "<group>"; };
+		8BE6AF12188902C100F827C6 /* ParsePitchValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePitchValues.m; sourceTree = "<group>"; };
+		8BE6AF1418890C6900F827C6 /* ParsePitchFXPitchValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchFXPitchValues.h; sourceTree = "<group>"; };
+		8BE6AF1518890C6900F827C6 /* ParsePitchFXPitchValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePitchFXPitchValues.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +206,12 @@
 				8B52F6C11882245E00CAB729 /* ParsePitchType.m */,
 				8B52F6BD18821FD800CAB729 /* ParsePitchFXPitchType.h */,
 				8B52F6BE18821FD800CAB729 /* ParsePitchFXPitchType.m */,
+				8B8054921888C1CC00D88832 /* ParsePitchFXPitchVelocity.h */,
+				8B8054931888C1CC00D88832 /* ParsePitchFXPitchVelocity.m */,
+				8BE6AF11188902C100F827C6 /* ParsePitchValues.h */,
+				8BE6AF12188902C100F827C6 /* ParsePitchValues.m */,
+				8BE6AF1418890C6900F827C6 /* ParsePitchFXPitchValues.h */,
+				8BE6AF1518890C6900F827C6 /* ParsePitchFXPitchValues.m */,
 				8B7FB3BE18836E9200843242 /* ParseFielding.h */,
 				8B7FB3BF18836E9200843242 /* ParseFielding.m */,
 				8B7FB3C118837B6600843242 /* ParseAdvancedFielding.h */,
@@ -440,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE6AF1618890C6900F827C6 /* ParsePitchFXPitchValues.m in Sources */,
 				8BBAF20D17569F100059A638 /* main.m in Sources */,
 				8BBAF21417569F100059A638 /* AppDelegate.m in Sources */,
+				8B8054941888C1CC00D88832 /* ParsePitchFXPitchVelocity.m in Sources */,
 				8BBAF2431756A0D80059A638 /* TFHpple.m in Sources */,
 				8BBAF2451756A0D80059A638 /* TFHppleElement.m in Sources */,
 				8BBAF2471756A0D80059A638 /* XPathQuery.m in Sources */,
@@ -451,6 +468,7 @@
 				8BA037311876602B00722E49 /* StringManipulation.m in Sources */,
 				8BBAF2551756A9460059A638 /* LoadPage.m in Sources */,
 				8B9CCE3E1760684E0070C12C /* Player.m in Sources */,
+				8BE6AF13188902C100F827C6 /* ParsePitchValues.m in Sources */,
 				8B52F6BF18821FD800CAB729 /* ParsePitchFXPitchType.m in Sources */,
 				8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */,
 				8B7FB3C018836E9200843242 /* ParseFielding.m in Sources */,
