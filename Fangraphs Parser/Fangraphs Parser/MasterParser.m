@@ -31,6 +31,7 @@
 #import "ParsePlateDisciplinePitchFX.h"
 #import "ParseFansScoutingReport.h"
 #import "ParseValue.h"
+#import "ParseDashboard.h"
 
 @implementation MasterParser
 
@@ -169,7 +170,8 @@
     ParsePlateDisciplinePitchFX *plateDisciplinePitchFX = [[ParsePlateDisciplinePitchFX alloc] initWithWebpage:FGPlayerPage];
     ParseFansScoutingReport *fansScoutingReport = [[ParseFansScoutingReport alloc] initWithWebpage:FGPlayerPage];
     ParseValue *parseValue = [[ParseValue alloc] initWithWebpage:FGPlayerPage];
-
+    ParseDashboard *parseDashbaord = [[ParseDashboard alloc] initWithWebpage:FGPlayerPage];
+    
     [queue addOperation:standard];
     [queue addOperation:playerInfo];
     [queue addOperation:advanced];
@@ -188,6 +190,7 @@
     [queue addOperation:plateDisciplinePitchFX];
     [queue addOperation:fansScoutingReport];
     [queue addOperation:parseValue];
+    [queue addOperation:parseDashbaord];
     [queue waitUntilAllOperationsAreFinished];
 }
 

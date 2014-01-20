@@ -22,6 +22,7 @@
 @property (nonatomic, copy) NSNumber *games;
 
 
+
 //Standard Hitting Stats
 
 @property (nonatomic, copy) NSNumber *atBats;

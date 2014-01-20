@@ -120,7 +120,7 @@
         elementCount++;
         
         TFHppleElement *pacePercentagePFXElement = [plateDisciplineNode objectAtIndex:elementCount];
-        NSString *pace = [[pacePercentagePFXElement firstChild]content];
+        NSNumber *pace =  [temp numberFromString:[[pacePercentagePFXElement firstChild]content]];
         player.pace = pace;
         NSLog(@"Pace: %@",player.pace);
         elementCount++;
