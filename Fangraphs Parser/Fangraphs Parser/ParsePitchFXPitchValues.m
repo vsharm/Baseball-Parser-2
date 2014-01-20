@@ -86,81 +86,82 @@
         TFHppleElement *weightedFastballPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedFastballPFX = [temp numberFromString:[[weightedFastballPFXElement firstChild]content]];
         player.weightedFastballPFX = weightedFastballPFX;
-        NSLog(@"wFastball PFX Value Per 100: %@",player.weightedFastballPFX);
+        NSLog(@"wFastball PFX Value: %@",player.weightedFastballPFX);
         elementCount++;
         
         TFHppleElement *weightedTwoseamPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedTwoseamPFX = [temp numberFromString:[[weightedTwoseamPFXElement firstChild]content]];
         player.weightedTwoseamPFX = weightedTwoseamPFX;
-        NSLog(@"wTwoseam PFX Value Per 100: %@",player.weightedTwoseamPFX);
+        NSLog(@"wTwoseam PFX Value: %@",player.weightedTwoseamPFX);
         elementCount++;
         
         TFHppleElement *weightedCutterPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedCutterPFX = [temp numberFromString:[[weightedCutterPFXElement firstChild]content]];
         player.weightedCutterPFX = weightedCutterPFX;
-        NSLog(@"wCutter PFX Value Per 100: %@",player.weightedCutterPFX);
+        NSLog(@"wCutter PFX Value: %@",player.weightedCutterPFX);
         elementCount++;
         
         TFHppleElement *weightedSplitFastballPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedSplitFastballPFX = [temp numberFromString:[[weightedSplitFastballPFXElement firstChild]content]];
         player.weightedSplitFastballPFX = weightedSplitFastballPFX;
-        NSLog(@"wSplitter PFX Value Per 100: %@",player.weightedSplitFastballPFX);
+        NSLog(@"wSplitter PFX Value: %@",player.weightedSplitFastballPFX);
         elementCount++;
         
         TFHppleElement *Element = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedFastball = [temp numberFromString:[[Element firstChild]content]];
         player.weightedFastball = weightedFastball;
-        NSLog(@"wForkball PFX Value Per 100: %@",player.weightedForkballPFX);
+        NSLog(@"wForkball PFX Value: %@",player.weightedForkballPFX);
         elementCount++;
         
         TFHppleElement *weightedSinkerPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedSinkerPFX = [temp numberFromString:[[weightedSinkerPFXElement firstChild]content]];
         player.weightedSinkerPFX = weightedSinkerPFX;
-        NSLog(@"wSinker PFX Value Per 100: %@",player.weightedSinkerPFX);
+        NSLog(@"wSinker PFX Value: %@",player.weightedSinkerPFX);
         elementCount++;
         
         TFHppleElement *weightedSliderPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedSliderPFX = [temp numberFromString:[[weightedSliderPFXElement firstChild]content]];
         player.weightedSliderPFX = weightedSliderPFX;
-        NSLog(@"wSlider PFX Value Per 100: %@",player.weightedSliderPFX);
+        NSLog(@"wSlider PFX Value: %@",player.weightedSliderPFX);
         elementCount++;
         
         TFHppleElement *weightedCurveballPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedCurveballPFX = [temp numberFromString:[[weightedCurveballPFXElement firstChild]content]];
         player.weightedCurveballPFX = weightedCurveballPFX;
-        NSLog(@"wCurveball PFX Value Per 100: %@",player.weightedCurveballPFX);
+        NSLog(@"wCurveball PFX Value: %@",player.weightedCurveballPFX);
         elementCount++;
         
         TFHppleElement *weightedKnuckleCurveballPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedKnuckleCurveballPFX = [temp numberFromString:[[weightedKnuckleCurveballPFXElement firstChild]content]];
         player.weightedKnuckleCurveballPFX = weightedKnuckleCurveballPFX;
-        NSLog(@"wKnuckleCurve PFX Value Per 100: %@",player.weightedKnuckleCurveballPFX);
+        NSLog(@"wKnuckleCurve PFX Value: %@",player.weightedKnuckleCurveballPFX);
         elementCount++;
         
         TFHppleElement *weightedEphusPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedEphusPFX = [temp numberFromString:[[weightedEphusPFXElement firstChild]content]];
         player.weightedEphusPFX = weightedEphusPFX;
-        NSLog(@"wEphus PFX Value Per 100: %@",player.weightedEphusPFX);
+        NSLog(@"wEphus PFX Value: %@",player.weightedEphusPFX);
         elementCount++;
         
         TFHppleElement *weightedChangeupPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedChangeupPFX = [temp numberFromString:[[weightedChangeupPFXElement firstChild]content]];
         player.weightedChangeupPFX = weightedChangeupPFX;
-        NSLog(@"wChangeup PFX Value Per 100: %@",player.weightedChangeupPFX);
+        NSLog(@"wChangeup PFX Value: %@",player.weightedChangeupPFX);
         elementCount++;
         
         TFHppleElement *weightedScrewballPFXElement = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedScrewballPFX = [temp numberFromString:[[weightedScrewballPFXElement firstChild]content]];
         player.weightedScrewballPFX = weightedScrewballPFX;
-        NSLog(@"wScrewball PFX Value Per 100: %@",player.weightedScrewballPFX);
+        NSLog(@"wScrewball PFX Value: %@",player.weightedScrewballPFX);
         elementCount++;
         
         TFHppleElement *weightedFastballOver100Element = [pitchValuesNodes objectAtIndex:elementCount];
         NSNumber *weightedFastballOver100 = [temp numberFromString:[[weightedFastballOver100Element firstChild]content]];
         player.weightedFastballOver100 = weightedFastballOver100;
-        NSLog(@"wKnuckleball PFX Value Per 100: %@",player.weightedKnuckleballPFX);
+        NSLog(@"wKnuckleball PFX Value: %@",player.weightedKnuckleballPFX);
         elementCount++;
-
+        
+        
         [playerArray addObject:player];
     }
     

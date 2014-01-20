@@ -52,7 +52,7 @@
 {
     
 	MasterParser *parser = [[MasterParser alloc] init];
-    [parser setURL:@"Pablo Sandoval"];
+    [parser setURL:@"Buster Posey"];
     [parser setWebPages];
     if([parser isDuplicate]){
         NSLog(@"TRUE");

@@ -11,6 +11,6 @@
 @interface StringManipulation : NSObject
 
 -(NSNumber  *)removePercentage:(NSString *)inputStr;
-
+-(NSNumber *)removeDollarSign:(NSString *)inputStr;
 @end
 

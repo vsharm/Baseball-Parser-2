@@ -203,7 +203,7 @@
 @property (nonatomic, copy) NSNumber *zContactPercentagePFX;
 @property (nonatomic, copy) NSNumber *contactPercentagePFX;
 @property (nonatomic, copy) NSNumber *zonePercentagePFX;
-@property (nonatomic, copy) NSNumber *pacePercentagePFX;
+@property (nonatomic, copy) NSNumber *pace;
 
 //Fielding
 //games
@@ -248,6 +248,20 @@
 @property (nonatomic, copy) NSNumber *uzrErrorRunsAboveAvg;
 @property (nonatomic, copy) NSNumber *uzr;
 @property (nonatomic, copy) NSNumber *uzrOver150;
+
+//Fan Scouting Report
+//inning
+@property (nonatomic, copy) NSNumber *votes;
+@property (nonatomic, copy) NSNumber *instincts;
+@property (nonatomic, copy) NSNumber *innings;
+@property (nonatomic, copy) NSNumber *firstStep;
+@property (nonatomic, copy) NSNumber *fanSpeed;
+@property (nonatomic, copy) NSNumber *hands;
+@property (nonatomic, copy) NSNumber *fanRelease;
+@property (nonatomic, copy) NSNumber *armStrength;
+@property (nonatomic, copy) NSNumber *armAccuracy;
+@property (nonatomic, copy) NSNumber *overall;
+//fanscoutingreportrunsaboveaverage
 
 //Value
 @property (nonatomic, copy) NSNumber *batting;

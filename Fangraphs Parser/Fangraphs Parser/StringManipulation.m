@@ -30,4 +30,26 @@
     return retNumber;
 }
 
+-(NSNumber *)removeDollarSign:(NSString *)inputStr{
+    NSNumber *retNumber = [[NSNumber alloc] initWithInt:0];
+    NSNumberFormatter *temp = [[NSNumberFormatter alloc] init];
+    if ( [inputStr length] >= 2){
+        inputStr = [self removeParenthesis:inputStr];
+        inputStr = [inputStr substringFromIndex:1];
+        
+    }
+    retNumber = [temp numberFromString: inputStr];
+    return retNumber;
+}
+
+-(NSString *)removeParenthesis:(NSString *)inputStr{
+    if ( [inputStr length] >= 2){
+        if([inputStr characterAtIndex:0] == '('){
+            inputStr = [inputStr substringFromIndex:1];
+            inputStr = [inputStr substringToIndex:[inputStr length] - 1];
+        }
+    }
+    return inputStr;
+}
+
 @end

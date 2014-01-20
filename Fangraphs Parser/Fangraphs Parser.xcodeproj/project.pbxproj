@@ -13,12 +13,15 @@
 		8B3C0039176C62DA005FABD4 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C0037176C62DA005FABD4 /* AppController.m */; };
 		8B3C0045176C6686005FABD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C0044176C6686005FABD4 /* MainMenu.xib */; };
 		8B3C0046176C6686005FABD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C0044176C6686005FABD4 /* MainMenu.xib */; };
+		8B4EAD7F188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4EAD7E188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m */; };
 		8B52F6B9188207C100CAB729 /* ParseWinProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F6B8188207C100CAB729 /* ParseWinProbability.m */; };
 		8B52F6BF18821FD800CAB729 /* ParsePitchFXPitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F6BE18821FD800CAB729 /* ParsePitchFXPitchType.m */; };
 		8B52F6C21882245E00CAB729 /* ParsePitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F6C11882245E00CAB729 /* ParsePitchType.m */; };
 		8B7FB3C018836E9200843242 /* ParseFielding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB3BF18836E9200843242 /* ParseFielding.m */; };
 		8B7FB3C318837B6600843242 /* ParseAdvancedFielding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB3C218837B6600843242 /* ParseAdvancedFielding.m */; };
 		8B8054941888C1CC00D88832 /* ParsePitchFXPitchVelocity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8054931888C1CC00D88832 /* ParsePitchFXPitchVelocity.m */; };
+		8B839885188CE03600EFC146 /* ParsePlateDiscipline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B839884188CE03600EFC146 /* ParsePlateDiscipline.m */; };
+		8B839888188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B839887188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.m */; };
 		8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
 		8B8A881717A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */; };
 		8B9B750B177AD18A002335FB /* DataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B750A177AD18A002335FB /* DataViewCell.m */; };
@@ -30,6 +33,8 @@
 		8BA037311876602B00722E49 /* StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA037301876602B00722E49 /* StringManipulation.m */; };
 		8BA037351876739000722E49 /* ParseBattedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA037341876739000722E49 /* ParseBattedBall.m */; };
 		8BA0373B1879331700722E49 /* ParseMoreBattedBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0373A1879331700722E49 /* ParseMoreBattedBall.m */; };
+		8BA04990188CEF7E00D7CDBC /* ParseFansScoutingReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0498F188CEF7E00D7CDBC /* ParseFansScoutingReport.m */; };
+		8BA04993188CF91700D7CDBC /* ParseValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA04992188CF91700D7CDBC /* ParseValue.m */; };
 		8BBAF20117569F100059A638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAF20017569F100059A638 /* Cocoa.framework */; };
 		8BBAF20B17569F100059A638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BBAF20917569F100059A638 /* InfoPlist.strings */; };
 		8BBAF20D17569F100059A638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF20C17569F100059A638 /* main.m */; };
@@ -74,6 +79,8 @@
 		8B3C0036176C62DA005FABD4 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "Fangraphs Parser/AppController.h"; sourceTree = "<group>"; };
 		8B3C0037176C62DA005FABD4 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "Fangraphs Parser/AppController.m"; sourceTree = "<group>"; };
 		8B3C0044176C6686005FABD4 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		8B4EAD7D188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchFXPitchValuesOver100.h; sourceTree = "<group>"; };
+		8B4EAD7E188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePitchFXPitchValuesOver100.m; sourceTree = "<group>"; };
 		8B52F6B7188207C100CAB729 /* ParseWinProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseWinProbability.h; sourceTree = "<group>"; };
 		8B52F6B8188207C100CAB729 /* ParseWinProbability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseWinProbability.m; sourceTree = "<group>"; };
 		8B52F6BD18821FD800CAB729 /* ParsePitchFXPitchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchFXPitchType.h; sourceTree = "<group>"; };
@@ -86,6 +93,10 @@
 		8B7FB3C218837B6600843242 /* ParseAdvancedFielding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseAdvancedFielding.m; sourceTree = "<group>"; };
 		8B8054921888C1CC00D88832 /* ParsePitchFXPitchVelocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePitchFXPitchVelocity.h; sourceTree = "<group>"; };
 		8B8054931888C1CC00D88832 /* ParsePitchFXPitchVelocity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePitchFXPitchVelocity.m; sourceTree = "<group>"; };
+		8B839883188CE03600EFC146 /* ParsePlateDiscipline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePlateDiscipline.h; sourceTree = "<group>"; };
+		8B839884188CE03600EFC146 /* ParsePlateDiscipline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePlateDiscipline.m; sourceTree = "<group>"; };
+		8B839886188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePlateDisciplinePitchFX.h; sourceTree = "<group>"; };
+		8B839887188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsePlateDisciplinePitchFX.m; sourceTree = "<group>"; };
 		8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInfoAndPosition.h; sourceTree = "<group>"; };
 		8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerInfoAndPosition.m; sourceTree = "<group>"; };
 		8B9B7509177AD18A002335FB /* DataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewCell.h; sourceTree = "<group>"; };
@@ -102,6 +113,10 @@
 		8BA037341876739000722E49 /* ParseBattedBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseBattedBall.m; sourceTree = "<group>"; };
 		8BA037391879331700722E49 /* ParseMoreBattedBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMoreBattedBall.h; sourceTree = "<group>"; };
 		8BA0373A1879331700722E49 /* ParseMoreBattedBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMoreBattedBall.m; sourceTree = "<group>"; };
+		8BA0498E188CEF7E00D7CDBC /* ParseFansScoutingReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseFansScoutingReport.h; sourceTree = "<group>"; };
+		8BA0498F188CEF7E00D7CDBC /* ParseFansScoutingReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseFansScoutingReport.m; sourceTree = "<group>"; };
+		8BA04991188CF91700D7CDBC /* ParseValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseValue.h; sourceTree = "<group>"; };
+		8BA04992188CF91700D7CDBC /* ParseValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseValue.m; sourceTree = "<group>"; };
 		8BBAF1FD17569F100059A638 /* Fangraphs Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fangraphs Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBAF20017569F100059A638 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8BBAF20317569F100059A638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -212,10 +227,20 @@
 				8BE6AF12188902C100F827C6 /* ParsePitchValues.m */,
 				8BE6AF1418890C6900F827C6 /* ParsePitchFXPitchValues.h */,
 				8BE6AF1518890C6900F827C6 /* ParsePitchFXPitchValues.m */,
+				8B4EAD7D188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.h */,
+				8B4EAD7E188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m */,
+				8B839883188CE03600EFC146 /* ParsePlateDiscipline.h */,
+				8B839884188CE03600EFC146 /* ParsePlateDiscipline.m */,
+				8B839886188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.h */,
+				8B839887188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.m */,
+				8BA0498E188CEF7E00D7CDBC /* ParseFansScoutingReport.h */,
+				8BA0498F188CEF7E00D7CDBC /* ParseFansScoutingReport.m */,
 				8B7FB3BE18836E9200843242 /* ParseFielding.h */,
 				8B7FB3BF18836E9200843242 /* ParseFielding.m */,
 				8B7FB3C118837B6600843242 /* ParseAdvancedFielding.h */,
 				8B7FB3C218837B6600843242 /* ParseAdvancedFielding.m */,
+				8BA04991188CF91700D7CDBC /* ParseValue.h */,
+				8BA04992188CF91700D7CDBC /* ParseValue.m */,
 			);
 			name = "Hitting Stat Parsers";
 			sourceTree = "<group>";
@@ -456,11 +481,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE6AF1618890C6900F827C6 /* ParsePitchFXPitchValues.m in Sources */,
+				8B839885188CE03600EFC146 /* ParsePlateDiscipline.m in Sources */,
 				8BBAF20D17569F100059A638 /* main.m in Sources */,
+				8B4EAD7F188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m in Sources */,
 				8BBAF21417569F100059A638 /* AppDelegate.m in Sources */,
 				8B8054941888C1CC00D88832 /* ParsePitchFXPitchVelocity.m in Sources */,
 				8BBAF2431756A0D80059A638 /* TFHpple.m in Sources */,
 				8BBAF2451756A0D80059A638 /* TFHppleElement.m in Sources */,
+				8BA04990188CEF7E00D7CDBC /* ParseFansScoutingReport.m in Sources */,
 				8BBAF2471756A0D80059A638 /* XPathQuery.m in Sources */,
 				8B7FB3C318837B6600843242 /* ParseAdvancedFielding.m in Sources */,
 				8BBAF24D1756A3C90059A638 /* MasterParser.m in Sources */,
@@ -470,6 +498,7 @@
 				8B9CCE3E1760684E0070C12C /* Player.m in Sources */,
 				8BE6AF13188902C100F827C6 /* ParsePitchValues.m in Sources */,
 				8B52F6BF18821FD800CAB729 /* ParsePitchFXPitchType.m in Sources */,
+				8B839888188CE58E00EFC146 /* ParsePlateDisciplinePitchFX.m in Sources */,
 				8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */,
 				8B7FB3C018836E9200843242 /* ParseFielding.m in Sources */,
 				8BC4EC9D1766C5AD00F769E6 /* HTMLParser.m in Sources */,
@@ -482,6 +511,7 @@
 				8B9EA986178A5B8200FF7EF9 /* ParseStandardHitting.m in Sources */,
 				8B8A881617A65A6D0060BFC2 /* PlayerInfoAndPosition.m in Sources */,
 				8B9D99B017E8237000B4D0C2 /* ParseAdvancedHitting.m in Sources */,
+				8BA04993188CF91700D7CDBC /* ParseValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -168,7 +168,7 @@
 @synthesize zContactPercentagePFX = _zContactPercentagePFX;
 @synthesize contactPercentagePFX = _contactPercentagePFX;
 @synthesize zonePercentagePFX = _zonePercentagePFX;
-@synthesize pacePercentagePFX = _pacePercentagePFX;
+@synthesize pace = _pace;
 
 //Pitch FX Pitch Value Over 100
 @synthesize fastballValueOver100PFX = _fastballValueOver100PFX;
@@ -247,8 +247,19 @@
 @synthesize weightedScrewballPFX = _weightedScrewballPFX;
 @synthesize weightedKnuckleballPFX = _weightedKnuckleballPFX;
 
-//Value
+//Fan ScoutingReport
+@synthesize votes = _votes;
+@synthesize instincts = _instincts;
+@synthesize innings = _innings;
+@synthesize firstStep = _firstStep;
+@synthesize fanSpeed = _fanSpeed;
+@synthesize hands = _hands;
+@synthesize fanRelease = _fanRelease;
+@synthesize armStrength = _armStrength;
+@synthesize armAccuracy = _armAccuracy;
+@synthesize overall = _overall;
 
+//Value
 @synthesize batting = _batting;
 @synthesize baseRunning = _baseRunning;
 @synthesize fielding = _fielding;

@@ -25,10 +25,8 @@
 
 -(void)setWebPages;
 -(NSUInteger)getNumYears;
--(NSArray *)getPlayer;
 -(BOOL) isDuplicate;
 -(NSArray*) getDuplicateLinks;
--(Player *) getYearOfPlayer : (int)countOfPlayersYearInLeague;
 -(void) getAllPlayerCatagories;
 //URL Getters and Setters
 -(void) setURL:(NSString *) name;
