@@ -31,24 +31,23 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Dashboard" object:nil userInfo:orientationData];
     });
 }
-
+//*[@id="SeasonStats1_dgSeason11_ctl00__24"]/td[2]
 
 -(NSArray *)getPlayer{
     
     //Years Xpath
-    NSString *yearXpath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow']/td[1]/a";
+    NSString *yearXpath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow' or @class='rgRow grid_total']/td[1]/a";
     NSArray *yearNodes = [FGPlayerParser searchWithXPathQuery:yearXpath];
     
     //Team Xpath
-    NSString *teamXpath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow']/td[2]/a";
+    NSString *teamXpath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow' or @class='rgRow grid_total']/td[2]/a";
     NSArray *teamNodes = [FGPlayerParser searchWithXPathQuery:teamXpath];
     
     
     //Table Xpath
-    NSString *dashHitterXPath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow']/td";
+    NSString *dashHitterXPath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow' or @class='rgRow grid_total']/td";
     NSArray *dashHitterNodes = [FGPlayerParser searchWithXPathQuery:dashHitterXPath];
-    
-    
+
     
     //Temp Vars for changing NSString to NSNumber
     NSNumberFormatter *temp = [[NSNumberFormatter alloc] init];
@@ -56,8 +55,7 @@
     StringManipulation *strMan = [[StringManipulation alloc] init];
     
     NSMutableArray *playerArray = [[NSMutableArray alloc] initWithCapacity:0];
-    
-    
+
     for(int i = 0; i< [yearNodes count]; i++){
         int elementCount = (21*i);
         
@@ -70,12 +68,14 @@
         NSLog(@"Year: %@",player.year);
         elementCount++;
         
-        //Set Team
-        TFHppleElement *teamElement = [teamNodes objectAtIndex:i];
-        NSString *team = [[teamElement firstChild]content];
-        player.team = team;
-        NSLog(@"Team: %@",player.team);
-        elementCount++;
+        if( [teamNodes count] < i){
+            //Set Team
+            TFHppleElement *teamElement = [teamNodes objectAtIndex:i];
+            NSString *team = [[teamElement firstChild]content];
+            player.team = team;
+            NSLog(@"Team: %@",player.team);
+            elementCount++;
+        }
         
         //Set Games
         TFHppleElement *gamesElement = [dashHitterNodes objectAtIndex:elementCount];

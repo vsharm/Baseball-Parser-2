@@ -208,10 +208,10 @@
 		8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				8BAC5300188DD41A00820AD2 /* ParseDashboard.h */,
-				8BAC5301188DD41A00820AD2 /* ParseDashboard.m */,
 				8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */,
 				8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */,
+				8BAC5300188DD41A00820AD2 /* ParseDashboard.h */,
+				8BAC5301188DD41A00820AD2 /* ParseDashboard.m */,
 				8B9EA984178A5B8200FF7EF9 /* ParseStandardHitting.h */,
 				8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */,
 				8B9D99AE17E8237000B4D0C2 /* ParseAdvancedHitting.h */,
@@ -265,6 +265,7 @@
 				8BC4EBFA1765BB5F00F769E6 /* Interface Files */,
 				8B0653C117692E8E00B7F1E9 /* Data Type Objects */,
 				8BBAF20617569F100059A638 /* Fangraphs Parser */,
+				8BBAF20717569F100059A638 /* Supporting Files */,
 				8BBAF22317569F100059A638 /* Fangraphs ParserTests */,
 				8BBAF2341756A0BB0059A638 /* HPPLE */,
 				8B0653C01769170800B7F1E9 /* OBJ-C HTML Parser */,
@@ -312,7 +313,6 @@
 				8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */,
 				8BBAF24B1756A3C90059A638 /* MasterParser.h */,
 				8BBAF24C1756A3C90059A638 /* MasterParser.m */,
-				8BBAF20717569F100059A638 /* Supporting Files */,
 			);
 			path = "Fangraphs Parser";
 			sourceTree = "<group>";
@@ -330,6 +330,7 @@
 				8B3C0044176C6686005FABD4 /* MainMenu.xib */,
 			);
 			name = "Supporting Files";
+			path = "Fangraphs Parser";
 			sourceTree = "<group>";
 		};
 		8BBAF22317569F100059A638 /* Fangraphs ParserTests */ = {
