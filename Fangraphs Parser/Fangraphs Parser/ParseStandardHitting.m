@@ -11,7 +11,7 @@
 @implementation ParseStandardHitting
 
 - (void)main {
-    [self mainBody:@"StandardHitting" filledPlayerArray:[self getPlayer]];
+    [self mainBody:@"StandardHitting" filledPlayerArray:([self getPlayer]) ];
 }
 
 
