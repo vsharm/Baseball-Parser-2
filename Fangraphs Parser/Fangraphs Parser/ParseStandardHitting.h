@@ -7,18 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TFHpple.h"
-#import "Player.h"
+#import "ParserParent.h"
 
-@interface ParseStandardHitting : NSOperation{
-    TFHpple *FGPlayerParser;
-}
-
-@property (nonatomic, copy) NSData *webpage;
-@property (nonatomic, copy) NSArray *standard;
-
-
-- (id)initWithWebpage:(NSData*)webpageData;
-- (void)main;
-
+@interface ParseStandardHitting : ParserParent
 @end

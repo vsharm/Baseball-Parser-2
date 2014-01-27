@@ -56,6 +56,7 @@
 		8BBAF24E1756A3C90059A638 /* MasterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF24C1756A3C90059A638 /* MasterParser.m */; };
 		8BBAF2551756A9460059A638 /* LoadPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF2541756A9460059A638 /* LoadPage.m */; };
 		8BBAF2561756A9460059A638 /* LoadPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAF2541756A9460059A638 /* LoadPage.m */; };
+		8BBE4B8D18963E8E007B2CA7 /* ParserParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE4B8C18963E8E007B2CA7 /* ParserParent.m */; };
 		8BC4EC9B1766C5AD00F769E6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC981766C5AD00F769E6 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8BC4EC9C1766C5AD00F769E6 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC981766C5AD00F769E6 /* HTMLNode.m */; };
 		8BC4EC9D1766C5AD00F769E6 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4EC9A1766C5AD00F769E6 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -149,6 +150,8 @@
 		8BBAF24C1756A3C90059A638 /* MasterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterParser.m; sourceTree = "<group>"; };
 		8BBAF2531756A9460059A638 /* LoadPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadPage.h; sourceTree = "<group>"; };
 		8BBAF2541756A9460059A638 /* LoadPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadPage.m; sourceTree = "<group>"; };
+		8BBE4B8B18963E8E007B2CA7 /* ParserParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserParent.h; sourceTree = "<group>"; };
+		8BBE4B8C18963E8E007B2CA7 /* ParserParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserParent.m; sourceTree = "<group>"; };
 		8BC4EC971766C5AC00F769E6 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = ../HTMLNode.h; sourceTree = "<group>"; };
 		8BC4EC981766C5AD00F769E6 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = ../HTMLNode.m; sourceTree = "<group>"; };
 		8BC4EC991766C5AD00F769E6 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = ../HTMLParser.h; sourceTree = "<group>"; };
@@ -208,12 +211,14 @@
 		8B9EA988178A5B8F00FF7EF9 /* Hitting Stat Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */,
-				8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */,
-				8BAC5300188DD41A00820AD2 /* ParseDashboard.h */,
-				8BAC5301188DD41A00820AD2 /* ParseDashboard.m */,
+				8BBE4B8B18963E8E007B2CA7 /* ParserParent.h */,
+				8BBE4B8C18963E8E007B2CA7 /* ParserParent.m */,
 				8B9EA984178A5B8200FF7EF9 /* ParseStandardHitting.h */,
 				8B9EA985178A5B8200FF7EF9 /* ParseStandardHitting.m */,
+				8BAC5300188DD41A00820AD2 /* ParseDashboard.h */,
+				8BAC5301188DD41A00820AD2 /* ParseDashboard.m */,
+				8B8A881417A65A6D0060BFC2 /* PlayerInfoAndPosition.h */,
+				8B8A881517A65A6D0060BFC2 /* PlayerInfoAndPosition.m */,
 				8B9D99AE17E8237000B4D0C2 /* ParseAdvancedHitting.h */,
 				8B9D99AF17E8237000B4D0C2 /* ParseAdvancedHitting.m */,
 				8BA037331876739000722E49 /* ParseBattedBall.h */,
@@ -490,6 +495,7 @@
 				8B839885188CE03600EFC146 /* ParsePlateDiscipline.m in Sources */,
 				8BAC5302188DD41A00820AD2 /* ParseDashboard.m in Sources */,
 				8BBAF20D17569F100059A638 /* main.m in Sources */,
+				8BBE4B8D18963E8E007B2CA7 /* ParserParent.m in Sources */,
 				8B4EAD7F188B47F300DFA685 /* ParsePitchFXPitchValuesOver100.m in Sources */,
 				8BBAF21417569F100059A638 /* AppDelegate.m in Sources */,
 				8B8054941888C1CC00D88832 /* ParsePitchFXPitchVelocity.m in Sources */,

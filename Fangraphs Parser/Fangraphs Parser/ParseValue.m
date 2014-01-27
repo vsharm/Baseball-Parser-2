@@ -68,12 +68,14 @@
         NSLog(@"Year: %@",player.year);
         elementCount++;
         
+        if( [teamNodes count] < i){
         //Set Team
         TFHppleElement *teamElement = [teamNodes objectAtIndex:i];
         NSString *team = [[teamElement firstChild]content];
         player.team = team;
         NSLog(@"Team: %@",player.team);
         elementCount++;
+        }
         
         //Set Position
         TFHppleElement *battingElement = [valueNodes objectAtIndex:elementCount];

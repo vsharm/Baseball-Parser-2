@@ -173,24 +173,24 @@
     ParseDashboard *parseDashbaord = [[ParseDashboard alloc] initWithWebpage:FGPlayerPage];
     
     [queue addOperation:standard];
-    [queue addOperation:playerInfo];
-    [queue addOperation:advanced];
-    [queue addOperation:battedBall];
-    [queue addOperation:moreBattedBall];
-    [queue addOperation:winProbability];
-    [queue addOperation:pitchType];
-    [queue addOperation:pitchTypeFX];
-    [queue addOperation:fielding];
-    [queue addOperation:advancedFielding];
-    [queue addOperation:pitchVelocity];
-    [queue addOperation:pitchValues];
-    [queue addOperation:pitchFXValues];
-    [queue addOperation:pitchFXValuesOver100];
-    [queue addOperation:plateDiscipline];
-    [queue addOperation:plateDisciplinePitchFX];
-    [queue addOperation:fansScoutingReport];
-    [queue addOperation:parseValue];
-    [queue addOperation:parseDashbaord];
+//    [queue addOperation:playerInfo];
+//    [queue addOperation:advanced];
+//    [queue addOperation:battedBall];
+//    [queue addOperation:moreBattedBall];
+//    [queue addOperation:winProbability];
+//    [queue addOperation:pitchType];
+//    [queue addOperation:pitchTypeFX];
+//    [queue addOperation:fielding];
+//    [queue addOperation:advancedFielding];
+//    [queue addOperation:pitchVelocity];
+//    [queue addOperation:pitchValues];
+//    [queue addOperation:pitchFXValues];
+//    [queue addOperation:pitchFXValuesOver100];
+//    [queue addOperation:plateDiscipline];
+//    [queue addOperation:plateDisciplinePitchFX];
+//    [queue addOperation:fansScoutingReport];
+//    [queue addOperation:parseValue];
+//    [queue addOperation:parseDashbaord];
     [queue waitUntilAllOperationsAreFinished];
 }
 
