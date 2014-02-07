@@ -40,116 +40,93 @@
         
         //Set Year
 
-        player.year = [self getNodeString:yearNodes index:i];
-        NSLog(@"Year: %@",player.year);
+        player.year = [self getNodeString:yearNodes index:i loggingStatement:@"Year"];
         elementCount++;
         
         //Set Team
-        player.team = [self getNodeString:teamNodes index:i];
-        NSLog(@"Team: %@",player.team);
+        player.team = [self getNodeString:teamNodes index:i loggingStatement:@"Team"];
         elementCount++;
         
         //Set Games
 
-        player.games = [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"Games: %@",player.games);
+        player.games = [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Games"];
         elementCount++;
         
         //Set At Bats
-        player.atBats = [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"AB: %@",player.atBats);
+        player.atBats = [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"AB"];
         elementCount++;
         
         //Set Plate Appearences
-        player.plateAppearences =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"PA: %@",player.plateAppearences);
+        player.plateAppearences =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"PA"];
         elementCount++;
         
         //Set Hits
-        NSNumber *hit =  [self getNodeNumber:sharedNodes index:elementCount];
-        player.hits = hit;
-        NSLog(@"Hits: %@",player.hits);
+        player.hits =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Hits"];
         elementCount++;
         
         //Set Singles
-        player.singles = [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"1B: %@",player.singles);
+        player.singles = [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"1B"];
         elementCount++;
         
         //Set Doubles
-        player.doubles =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"2B: %@",player.doubles);
+        player.doubles =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"2B"];
         elementCount++;
         
         //Set Triples
-        player.triples =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"3B: %@",player.triples);
+        player.triples =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"3B"];
         elementCount++;
         
         //Set Homeruns
-        player.homeruns =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"HR: %@",player.homeruns);
+        player.homeruns =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"HR"];
         elementCount++;
         
         //Set Runs
-        player.runs =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"Runs: %@",player.runs);
+        player.runs =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Runs"];
         elementCount++;
         
         //Set RBI
-        player.rbi =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"RBI: %@",player.rbi);
+        player.rbi =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"RBI"];
         elementCount++;
         
         //Set BB
-        player.baseOnBalls =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"BB: %@",player.baseOnBalls);
+        player.baseOnBalls =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"BB"];
         elementCount++;
         
         //Set IBB
-        player.intentionalBaseOnBalls =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"IBB: %@",player.intentionalBaseOnBalls);
+        player.intentionalBaseOnBalls =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"IBB"];
         elementCount++;
         
         //Set so
 
-        player.strikeouts =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"SO: %@",player.strikeouts);
+        player.strikeouts =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SO"];
         elementCount++;
         
         //Set hbp
-        player.hitByPitch =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"HBP: %@",player.hitByPitch);
+        player.hitByPitch =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"HBP"];
         elementCount++;
         
         //Set SF
-        player.sacrificeFlys =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"SF: %@",player.sacrificeFlys);
+        player.sacrificeFlys =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SF"];
         elementCount++;
         
         //Set SH
-        player.sacrificeHits =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"SH: %@",player.sacrificeHits);
+        player.sacrificeHits =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SH"];
         elementCount++;
         
         //Set GDP
-        player.groundIntoDoublePlays =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"GDP: %@",player.groundIntoDoublePlays);
+        player.groundIntoDoublePlays =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"GDP"];
         elementCount++;
         
         //Set SB
-        player.stolenBases =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"SB: %@",player.stolenBases);
+        player.stolenBases =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SB"];
         elementCount++;
         
         //Set CS
-        player.caughtStolen =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"SB: %@",player.caughtStolen);
+        player.caughtStolen =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SB"];
         elementCount++;
         
         //Set AVG
-        player.average =  [self getNodeNumber:sharedNodes index:elementCount];
-        NSLog(@"AVG: %@",player.average);
+        player.average =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"AVG"];
         elementCount++;
         
         [playerArray addObject:player];

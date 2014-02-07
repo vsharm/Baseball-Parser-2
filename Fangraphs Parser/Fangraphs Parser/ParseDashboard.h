@@ -9,16 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TFHpple.h"
 #import "Player.h"
+#import "ParserParent.h"
 
-@interface ParseDashboard : NSOperation{
-    TFHpple *FGPlayerParser;
-}
-
-@property (nonatomic, copy) NSData *webpage;
-@property (nonatomic, copy) NSArray *dashboard;
-
-
-- (id)initWithWebpage:(NSData*)webpageData;
-- (void)main;
-
+@interface ParseDashboard : ParserParent
 @end

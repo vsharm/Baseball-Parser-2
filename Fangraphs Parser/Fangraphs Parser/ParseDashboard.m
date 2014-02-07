@@ -10,29 +10,10 @@
 #import "StringManipulation.h"
 
 @implementation ParseDashboard
-@synthesize webpage;
-@synthesize dashboard;
 
-
-- (id)initWithWebpage:(NSData*)webpageData{
-    self = [super init];
-    [self setWebpage:webpageData];
-    return self;
-}
 - (void)main {
-    FGPlayerParser = [[TFHpple alloc] initWithHTMLData:webpage];
-    dashboard = [[NSArray alloc] initWithArray:[self getPlayer]];
-    
-    //Post Notification
-    NSDictionary* orientationData = [NSDictionary dictionaryWithObject:dashboard
-                                                                forKey:@"Dashboard"];
-    
-    dispatch_async(dispatch_get_main_queue(),^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"Dashboard" object:nil userInfo:orientationData];
-    });
+    [self mainBody:@"Dashboard" filledPlayerArray:([self getPlayer])];
 }
-//*[@id="SeasonStats1_dgSeason11_ctl00__24"]/td[2]
-
 -(NSArray *)getPlayer{
     
     //Years Xpath
@@ -46,14 +27,10 @@
     
     //Table Xpath
     NSString *dashHitterXPath = @"//*[@id='SeasonStats1_dgSeason11_ctl00']/tbody/tr[@class='rgRow' or @class='rgAltRow' or @class='rgRow grid_total']/td";
-    NSArray *dashHitterNodes = [FGPlayerParser searchWithXPathQuery:dashHitterXPath];
+    NSArray *sharedNodes = [FGPlayerParser searchWithXPathQuery:dashHitterXPath];
 
     
     //Temp Vars for changing NSString to NSNumber
-    NSNumberFormatter *temp = [[NSNumberFormatter alloc] init];
-    [temp setNumberStyle:NSNumberFormatterDecimalStyle];
-    StringManipulation *strMan = [[StringManipulation alloc] init];
-    
     NSMutableArray *playerArray = [[NSMutableArray alloc] initWithCapacity:0];
 
     for(int i = 0; i< [yearNodes count]; i++){
@@ -62,146 +39,93 @@
         Player *player = [[Player alloc] init];
         
         //Set Year
-        TFHppleElement *yearElement = [yearNodes objectAtIndex:i];
-        NSString *year = [[yearElement firstChild]content];
-        player.year = year;
-        NSLog(@"Year: %@",player.year);
+        
+        player.year = [self getNodeString:yearNodes index:i loggingStatement:@"Year"];
         elementCount++;
         
-        if( [teamNodes count] < i){
-            //Set Team
-            TFHppleElement *teamElement = [teamNodes objectAtIndex:i];
-            NSString *team = [[teamElement firstChild]content];
-            player.team = team;
-            NSLog(@"Team: %@",player.team);
-            elementCount++;
+        //Set Team
+        if( [teamNodes count] > i ){
+            player.team = [self getNodeString:teamNodes index:i loggingStatement:@"Team"];
         }
-        
-        //Set Games
-        TFHppleElement *gamesElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *games = [temp numberFromString:[[gamesElement firstChild]content]];
-        player.games = games;
-        NSLog(@"Games: %@",player.games);
         elementCount++;
+
+        //Set Games
+        player.games = [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Games"];
+        elementCount++;
+        
         
         //Set Plate Appearences
-        TFHppleElement *paElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *pa = [temp numberFromString:[[paElement firstChild]content]];
-        player.plateAppearences = pa;
-        NSLog(@"PA: %@",player.plateAppearences);
+        player.plateAppearences =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"PA"];
         elementCount++;
         
         //Set Homeruns
-        TFHppleElement *hrElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *hr = [temp numberFromString:[[hrElement firstChild]content]];
-        player.homeruns = hr;
-        NSLog(@"HR: %@",player.homeruns);
+        player.homeruns =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"HR"];
         elementCount++;
         
         //Set Runs
-        TFHppleElement *runsElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *runs = [temp numberFromString:[[runsElement firstChild]content]];
-        player.runs = runs;
-        NSLog(@"Runs: %@",player.runs);
+        player.runs =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Runs"];
         elementCount++;
-        
+
         //Set RBI
-        TFHppleElement *rbiElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *rbi = [temp numberFromString:[[rbiElement firstChild]content]];
-        player.rbi = rbi;
-        NSLog(@"RBI: %@",player.rbi);
+        player.rbi =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"RBI"];
         elementCount++;
         
         //Set SB
-        TFHppleElement *sbElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *sb = [temp numberFromString:[[sbElement firstChild]content]];
-        player.stolenBases = sb;
-        NSLog(@"SB: %@",player.stolenBases);
+        player.stolenBases =  [self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SB"];
+        elementCount++;
+        
+        //BB%
+        player.baseOnBallPercentage = [self getNodeStringWithoutPercentage:sharedNodes index:elementCount loggingStatement:@"K percentage"];
+        elementCount++;
+
+        
+        //K%
+        player.strikeoutPercentage = [self getNodeStringWithoutPercentage:sharedNodes index:elementCount loggingStatement:@"K percentage"];
+        elementCount++;
+        
+        //ISO
+        player.isolatedSlugging =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"ISO"];
         elementCount++;
         
         
-        TFHppleElement *bbPercentageElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSString *bbPercentageString =  [[bbPercentageElement firstChild]content];
-        player.baseOnBallPercentage = [strMan removePercentage:bbPercentageString];
-        NSLog(@"BB percentage: %@",player.baseOnBallPercentage);
-        elementCount++;
-        
-        TFHppleElement *soPercentageElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSString *soPercentageString =  [[soPercentageElement firstChild]content];
-        player.strikeoutPercentage = [strMan removePercentage:soPercentageString];;
-        NSLog(@"K percentage: %@",player.strikeoutPercentage);
-        elementCount++;
-        
-        TFHppleElement *isolatedSluggingElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *isolatedSlugging = [temp numberFromString:[[isolatedSluggingElement firstChild]content]];
-        player.isolatedSlugging = isolatedSlugging;
-        NSLog(@"ISO: %@",player.isolatedSlugging);
-        elementCount++;
-        
-        TFHppleElement *babipElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *babip = [temp numberFromString:[[babipElement firstChild]content]];
-        player.babip = babip;
-        NSLog(@"BABIP: %@",player.babip);
+        //BABIP
+        player.babip =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"BABIP"];
         elementCount++;
         
         //Set AVG
-        TFHppleElement *avgElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *avg = [temp numberFromString:[[avgElement firstChild]content]];
-        player.average = avg;
-        NSLog(@"AVG: %@",player.average);
+        player.average =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Average"];
         elementCount++;
         
-        TFHppleElement *onBasePercentageElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *onBasePercentage = [temp numberFromString:[[onBasePercentageElement firstChild]content]];
-        player.onBasePercentage = onBasePercentage;
-        NSLog(@"OBP: %@",player.onBasePercentage);
+        //OBP
+        player.onBasePercentage =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"OPB"];
         elementCount++;
         
-        TFHppleElement *sluggingPercentageElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *sluggingPercentage = [temp numberFromString:[[sluggingPercentageElement firstChild]content]];
-        player.sluggingPercentage = sluggingPercentage;
-        NSLog(@"SLG: %@",player.sluggingPercentage);
+        //SlG
+        player.sluggingPercentage =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"SLG"];
         elementCount++;
         
-        TFHppleElement *shElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *sh = [temp numberFromString:[[shElement firstChild]content]];
-        player.wOBA = sh;
-        NSLog(@"wOBA: %@",player.wOBA);
+        //wOBA
+        player.wOBA =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"wOBA"];
         elementCount++;
         
-        TFHppleElement *wRCPlusElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *wRCPlus = [temp numberFromString:[[wRCPlusElement firstChild]content]];
-        player.wRCPlus = wRCPlus;
-        NSLog(@"wRC+: %@",player.wRCPlus);
+        player.wRCPlus =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"wrc+"];
         elementCount++;
         
         
         //Set Position
-        TFHppleElement *baseRunningElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *baseRunning = [temp numberFromString:[[baseRunningElement firstChild]content]];
-        player.baseRunning = baseRunning;
-        NSLog(@"Base Running Value: %@",player.baseRunning);
+        player.baseRunning =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Base Running Value"];
         elementCount++;
         
         //Set Position
-        TFHppleElement *offenseElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *offense = [temp numberFromString:[[offenseElement firstChild]content]];
-        player.offense = offense;
-        NSLog(@"Offense Value: %@",player.offense);
+        player.offense =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Offensive Value"];
         elementCount++;
         
         //Set Position
-        TFHppleElement *defenseElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *defense = [temp numberFromString:[[defenseElement firstChild]content]];
-        player.defense = defense;
-        NSLog(@"Defense Value: %@",player.defense);
+        player.defense =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"Defensive Value"];
         elementCount++;
         
         //Set Position
-        TFHppleElement *winsAboveReplacementElement = [dashHitterNodes objectAtIndex:elementCount];
-        NSNumber *winsAboveReplacement = [temp numberFromString:[[winsAboveReplacementElement firstChild]content]];
-        player.winsAboveReplacement = winsAboveReplacement;
-        NSLog(@"WAR: %@",player.winsAboveReplacement);
+        player.winsAboveReplacement =[self getNodeNumber:sharedNodes index:elementCount loggingStatement:@"WAR"];
         elementCount++;
         
         

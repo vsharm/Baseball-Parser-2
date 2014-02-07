@@ -34,16 +34,30 @@
 }
 
 
-- (NSNumber *)getNodeNumber: (NSArray *)node index:(int)elementCount{
+- (NSNumber *)getNodeNumber: (NSArray *)node index:(int)elementCount loggingStatement:(NSString *)log{
     NSNumberFormatter *temp = [[NSNumberFormatter alloc] init];
     [temp setNumberStyle:NSNumberFormatterDecimalStyle];
     TFHppleElement *gamesElement = [node objectAtIndex:elementCount];
-    return [temp numberFromString:[[gamesElement firstChild]content]];
+    NSNumber *dataElement = [temp numberFromString:[[gamesElement firstChild]content]];
+    NSLog([log stringByAppendingString:@": %@"], dataElement);
+    return dataElement;
 }
 
-- (NSString *)getNodeString: (NSArray *)node index:(int)elementCount{
+- (NSString *)getNodeString: (NSArray *)node index:(int)elementCount loggingStatement:(NSString *)log{
     TFHppleElement *teamElement = [node objectAtIndex:elementCount];
-    return [[teamElement firstChild]content];
+    NSString *dataElement = [[teamElement firstChild]content];
+    NSLog([log stringByAppendingString:@": %@"], dataElement);
+    return dataElement;
 }
+
+- (NSNumber *)getNodeStringWithoutPercentage: (NSArray *)node index:(int)elementCount loggingStatement:(NSString *)log{
+    StringManipulation *strMan = [[StringManipulation alloc] init];
+    TFHppleElement *percentageElement = [node objectAtIndex:elementCount];
+    NSString *percentageString =  [[percentageElement firstChild]content];
+    NSNumber *dataElement = [strMan removePercentage:percentageString];
+    NSLog([log stringByAppendingString:@": %@"], dataElement);
+    return dataElement;
+}
+
 
 @end

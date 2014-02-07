@@ -172,7 +172,7 @@
     ParseValue *parseValue = [[ParseValue alloc] initWithWebpage:FGPlayerPage];
     ParseDashboard *parseDashbaord = [[ParseDashboard alloc] initWithWebpage:FGPlayerPage];
     
-    [queue addOperation:standard];
+//    [queue addOperation:standard];
 //    [queue addOperation:playerInfo];
 //    [queue addOperation:advanced];
 //    [queue addOperation:battedBall];
@@ -190,7 +190,7 @@
 //    [queue addOperation:plateDisciplinePitchFX];
 //    [queue addOperation:fansScoutingReport];
 //    [queue addOperation:parseValue];
-//    [queue addOperation:parseDashbaord];
+    [queue addOperation:parseDashbaord];
     [queue waitUntilAllOperationsAreFinished];
 }
 
